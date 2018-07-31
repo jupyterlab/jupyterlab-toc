@@ -15,11 +15,13 @@ import { each } from '@phosphor/algorithm';
 
 import { TableOfContentsRegistry } from './registry';
 
-import { IHeading } from './toc';
+import { IHeading, TableOfContents } from './toc';
 
 const VDOM_MIME_TYPE = 'application/vdom.v1+json';
 
 const HTML_MIME_TYPE = 'text/html';
+
+let currentLevel = 1;
 
 /**
  * Create a TOC generator for notebooks.
@@ -30,19 +32,47 @@ const HTML_MIME_TYPE = 'text/html';
  */
 export function createNotebookGenerator(
   tracker: INotebookTracker,
-  sanitizer: ISanitizer
+  sanitizer: ISanitizer,
+  widget: TableOfContents,
+  needNumbering = true
 ): TableOfContentsRegistry.IGenerator<NotebookPanel> {
+  console.log(widget);
   return {
     tracker,
     usesLatex: true,
     generate: panel => {
       let headings: IHeading[] = [];
+      let numberingDict: { [level: number]: number } = {};
       each(panel.content.widgets, cell => {
         let model = cell.model;
         // Only parse markdown cells or code cell outputs
         if (model.type === 'code') {
+          let executionCount = cell.node.getElementsByClassName(
+            'jp-InputArea-prompt'
+          )[0].innerHTML;
           // Iterate over the outputs, and parse them if they
           // are rendered markdown or HTML.
+          let showCode = true;
+          if (widget) {
+            showCode = widget.showCode;
+          }
+          if (showCode) {
+            let text = (model as CodeCellModel).value.text;
+            const onClickFactory2 = (line: number) => {
+              return () => {
+                cell.node.scrollIntoView();
+              };
+            };
+            headings = headings.concat(
+              Private.getCodeCells(
+                text,
+                onClickFactory2,
+                numberingDict,
+                executionCount,
+                currentLevel
+              )
+            );
+          }
           for (let i = 0; i < (model as CodeCellModel).outputs.length; i++) {
             // Filter out the outputs that are not rendered HTML
             // (that is, markdown, vdom, or text/html)
@@ -54,7 +84,6 @@ export function createNotebookGenerator(
             if (!htmlData.length) {
               continue;
             }
-
             // If the output has rendered HTML, parse it for headers.
             const outputWidget = (cell as CodeCell).outputArea.widgets[i];
             const onClickFactory = (el: Element) => {
@@ -66,7 +95,8 @@ export function createNotebookGenerator(
               Private.getRenderedHTMLHeadings(
                 outputWidget.node,
                 onClickFactory,
-                sanitizer
+                sanitizer,
+                numberingDict
               )
             );
           }
@@ -84,13 +114,20 @@ export function createNotebookGenerator(
                 }
               };
             };
+            let numbering = true;
+            if (widget != null) {
+              numbering = widget.needNumbering;
+            }
             headings = headings.concat(
               Private.getRenderedHTMLHeadings(
                 cell.node,
                 onClickFactory,
-                sanitizer
+                sanitizer,
+                numberingDict,
+                numbering
               )
             );
+            currentLevel = headings[headings.length - 1]['level'];
           } else {
             const onClickFactory = (line: number) => {
               return () => {
@@ -101,11 +138,20 @@ export function createNotebookGenerator(
               };
             };
             headings = headings.concat(
-              Private.getMarkdownHeadings(model.value.text, onClickFactory)
+              Private.getMarkdownHeadings(
+                model.value.text,
+                onClickFactory,
+                numberingDict
+              )
             );
           }
         }
       });
+      // for (let i = 0; i < headings.length - 1; i++) {
+      //   if (headings[i + 1].level < headings[i].level) {
+      //     console.log('has a child!');
+      //   }
+      // }
       return headings;
     }
   };
@@ -136,7 +182,11 @@ export function createMarkdownGenerator(
           editor.content.editor.setCursorPosition({ line, column: 0 });
         };
       };
-      return Private.getMarkdownHeadings(model.value.text, onClickFactory);
+      return Private.getMarkdownHeadings(
+        model.value.text,
+        onClickFactory,
+        null
+      );
     }
   };
 }
@@ -169,7 +219,8 @@ export function createRenderedMarkdownGenerator(
       return Private.getRenderedHTMLHeadings(
         widget.content.node,
         onClickFactory,
-        sanitizer
+        sanitizer,
+        null
       );
     }
   };
@@ -220,7 +271,7 @@ export function createLatexGenerator(
               column: 0
             });
           };
-          headings.push({ text, level, onClick });
+          headings.push({ text, level, onClick, type: 'heading' });
         }
       });
       return headings;
@@ -232,13 +283,41 @@ export function createLatexGenerator(
  * A private namespace for miscellaneous things.
  */
 namespace Private {
+  export function incrementNumberingDict(dict: any, level: number) {
+    if (dict[level + 1] != undefined) {
+      dict[level + 1] = undefined;
+    }
+    if (dict[level] === undefined) {
+      dict[level] = 1;
+    } else {
+      dict[level]++;
+    }
+  }
+
+  export function generateNumbering(numberingDict: any, level: number) {
+    let numbering = undefined;
+    if (numberingDict != null) {
+      Private.incrementNumberingDict(numberingDict, level);
+      numbering = '';
+      for (var j = 1; j <= level; j++) {
+        numbering +=
+          (numberingDict[j] == undefined ? '0' : numberingDict[j]) + '.';
+        if (j == level) {
+          numbering += ' ';
+        }
+      }
+    }
+    return numbering;
+  }
+
   /**
    * Given a string of markdown, get the markdown headings
    * in that string.
    */
   export function getMarkdownHeadings(
     text: string,
-    onClickFactory: (line: number) => (() => void)
+    onClickFactory: (line: number) => (() => void),
+    numberingDict: any
   ): IHeading[] {
     // Split the text into lines.
     const lines = text.split('\n');
@@ -265,7 +344,8 @@ namespace Private {
         const level = match[1].length;
         // Take special care to parse markdown links into raw text.
         const text = match[2].replace(/\[(.+)\]\(.+\)/g, '$1');
-        headings.push({ text, level, onClick });
+        let numbering = Private.generateNumbering(numberingDict, level);
+        headings.push({ text, level, numbering, onClick, type: 'header' });
         return;
       }
 
@@ -275,7 +355,8 @@ namespace Private {
         const level = match[1][0] === '=' ? 1 : 2;
         // Take special care to parse markdown links into raw text.
         const text = lines[idx - 1].replace(/\[(.+)\]\(.+\)/g, '$1');
-        headings.push({ text, level, onClick });
+        let numbering = Private.generateNumbering(numberingDict, level);
+        headings.push({ text, level, numbering, onClick, type: 'header' });
         return;
       }
 
@@ -286,12 +367,34 @@ namespace Private {
       if (match) {
         const level = parseInt(match[1], 10);
         const text = match[2];
-        headings.push({ text, level, onClick });
+        let numbering = Private.generateNumbering(numberingDict, level);
+        headings.push({ text, level, numbering, onClick, type: 'header' });
       }
     });
     return headings;
   }
 
+  export function getCodeCells(
+    text: string,
+    onClickFactory: (line: number) => (() => void),
+    numberingDict: any,
+    executionCount: string,
+    lastLevel: number
+  ): IHeading[] {
+    let headings: IHeading[] = [];
+    if (text) {
+      const lines = text.split('\n');
+      const onClick = onClickFactory(0);
+      const level = lastLevel + 1;
+      headings.push({
+        text: executionCount + ' ' + lines[0],
+        level,
+        onClick,
+        type: 'code'
+      });
+    }
+    return headings;
+  }
   /**
    * Given an HTML element, generate ToC headings
    * by finding all the headers and making IHeading objects for them.
@@ -299,19 +402,34 @@ namespace Private {
   export function getRenderedHTMLHeadings(
     node: HTMLElement,
     onClickFactory: (el: Element) => (() => void),
-    sanitizer: ISanitizer
+    sanitizer: ISanitizer,
+    numberingDict: any,
+    needNumbering = true
   ): IHeading[] {
     let headings: IHeading[] = [];
     let headingNodes = node.querySelectorAll('h1, h2, h3, h4, h5, h6');
     for (let i = 0; i < headingNodes.length; i++) {
       const heading = headingNodes[i];
-      const level = parseInt(heading.tagName[1], 10);
-      const text = heading.textContent || '';
+      const level = parseInt(heading.tagName[1]);
+      const text = heading.textContent;
+      let shallHide = !needNumbering;
+      if (heading.getElementsByClassName('numbering-entry').length > 0) {
+        heading.removeChild(
+          heading.getElementsByClassName('numbering-entry')[0]
+        );
+      }
       let html = sanitizer.sanitize(heading.innerHTML, sanitizerOptions);
       html = html.replace('¶', ''); // Remove the anchor symbol.
-
       const onClick = onClickFactory(heading);
-      headings.push({ level, text, html, onClick });
+      let numbering = Private.generateNumbering(numberingDict, level);
+      let numberingElement =
+        '<span class="numbering-entry" ' +
+        (shallHide ? ' hidden="true"' : '') +
+        '>' +
+        numbering +
+        '</span>';
+      heading.innerHTML = numberingElement + html;
+      headings.push({ level, text, numbering, html, onClick, type: 'header' });
     }
     return headings;
   }
