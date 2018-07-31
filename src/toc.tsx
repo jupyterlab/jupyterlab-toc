@@ -9,21 +9,17 @@ import { IRenderMimeRegistry } from '@jupyterlab/rendermime';
 
 import { Message } from '@phosphor/messaging';
 
-import { each } from '@phosphor/algorithm';
-
 import { Widget } from '@phosphor/widgets';
 
 import { TableOfContentsRegistry } from './registry';
 
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import { INotebookTracker } from '@jupyterlab/notebook';
 
 /**
  * Timeout for throttling TOC rendering.
  */
 const RENDER_TIMEOUT = 1000;
-const NEED_NUMBERING_BY_DEFAULT = true;
 
 /**
  * A widget for hosting a notebook table-of-contents.
@@ -36,7 +32,6 @@ export class TableOfContents extends Widget {
     super();
     this._docmanager = options.docmanager;
     this._rendermime = options.rendermime;
-    this._notebook = options.notebookTracker;
   }
 
   /**
@@ -79,7 +74,10 @@ export class TableOfContents extends Widget {
       signal: context.model.contentChanged,
       timeout: RENDER_TIMEOUT
     });
-    this._monitor.activityStopped.connect(this.update, this);
+    this._monitor.activityStopped.connect(
+      this.update,
+      this
+    );
     this.update();
   }
 
@@ -88,9 +86,10 @@ export class TableOfContents extends Widget {
    */
   protected onUpdateRequest(msg: Message): void {
     // Don't bother if the TOC is not visible
-    /* if (!this.isVisible) {
+    if (!this.isVisible) {
       return;
-    } */
+    }
+
     let toc: IHeading[] = [];
     let title = 'Table of Contents';
     if (this._current) {
@@ -100,40 +99,15 @@ export class TableOfContents extends Widget {
         title = PathExt.basename(context.localPath);
       }
     }
-    ReactDOM.render(
-      <TOCTree widget={this} title={title} toc={toc} />,
-      this.node,
-      () => {
-        if (
-          this._current &&
-          this._current.generator.usesLatex === true &&
-          this._rendermime.latexTypesetter
-        ) {
-          this._rendermime.latexTypesetter.typeset(this.node);
-        }
+    ReactDOM.render(<TOCTree title={title} toc={toc} />, this.node, () => {
+      if (
+        this._current &&
+        this._current.generator.usesLatex === true &&
+        this._rendermime.latexTypesetter
+      ) {
+        this._rendermime.latexTypesetter.typeset(this.node);
       }
-    );
-  }
-
-  private changeNumberingStateForAllCells(showNumbering: boolean) {
-    if (this._notebook.currentWidget) {
-      each(this._notebook.currentWidget.content.widgets, cell => {
-        let headingNodes = cell.node.querySelectorAll('h1, h2, h3, h4, h5, h6');
-        each(headingNodes, heading => {
-          if (heading.getElementsByClassName('numbering-entry').length > 0) {
-            if (!showNumbering) {
-              heading
-                .getElementsByClassName('numbering-entry')[0]
-                .setAttribute('hidden', 'true');
-            } else {
-              heading
-                .getElementsByClassName('numbering-entry')[0]
-                .removeAttribute('hidden');
-            }
-          }
-        });
-      });
-    }
+    });
   }
 
   /**
@@ -141,25 +115,8 @@ export class TableOfContents extends Widget {
    */
   protected onAfterShow(msg: Message): void {
     this.update();
-    if (this._notebook.currentWidget != null) {
-      this._notebook.currentWidget.content.activeCellChanged.connect(() => {
-        this.update();
-      });
-    }
   }
 
-  get needNumbering() {
-    return this._needNumbering;
-  }
-
-  set needNumbering(value: boolean) {
-    this._needNumbering = value;
-    this.changeNumberingStateForAllCells(value);
-  }
-
-  private _needNumbering = NEED_NUMBERING_BY_DEFAULT;
-  public showCode = true;
-  private _notebook: INotebookTracker;
   private _rendermime: IRenderMimeRegistry;
   private _docmanager: IDocumentManager;
   private _current: TableOfContents.ICurrentWidget | null;
@@ -183,7 +140,6 @@ export namespace TableOfContents {
      * The rendermime for the application.
      */
     rendermime: IRenderMimeRegistry;
-    notebookTracker: INotebookTracker;
   }
 
   /**
@@ -204,14 +160,12 @@ export interface IHeading {
   /**
    * The text of the heading.
    */
-  text: string | null;
+  text: string;
 
   /**
    * The HTML header level for the heading.
    */
   level: number;
-
-  numbering?: string | null;
 
   /**
    * A function to execute when clicking the ToC
@@ -228,8 +182,7 @@ export interface IHeading {
    * For instance, this can be used to render
    * already-renderd-to-html markdown headings.
    */
-  html?: string | null;
-  type: string;
+  html?: string;
 }
 
 /**
@@ -245,7 +198,6 @@ export interface ITOCTreeProps extends React.Props<TOCTree> {
    * A list of IHeadings to render.
    */
   toc: IHeading[];
-  widget: TableOfContents;
 }
 
 /**
@@ -256,26 +208,12 @@ export interface ITOCItemProps extends React.Props<TOCItem> {
    * An IHeading to render.
    */
   heading: IHeading;
-  needNumbering: boolean;
-}
-
-export interface ITOCItemStates {
-  needNumbering: boolean;
 }
 
 /**
  * A React component for a table of contents entry.
  */
-export class TOCItem extends React.Component<ITOCItemProps, ITOCItemStates> {
-  constructor(props: ITOCItemProps) {
-    super(props);
-    this.state = { needNumbering: this.props.needNumbering };
-  }
-
-  componentWillReceiveProps(nextProps: ITOCItemProps) {
-    this.setState({ needNumbering: nextProps.needNumbering });
-  }
-
+export class TOCItem extends React.Component<ITOCItemProps, {}> {
   /**
    * Render the item.
    */
@@ -297,87 +235,40 @@ export class TOCItem extends React.Component<ITOCItemProps, ITOCItemStates> {
     };
 
     let content;
-    let numbering =
-      heading.numbering && this.state.needNumbering ? heading.numbering : '';
+
     if (heading.html) {
       content = (
         <span
-          dangerouslySetInnerHTML={{ __html: numbering + heading.html }}
+          dangerouslySetInnerHTML={{ __html: heading.html }}
           style={{ paddingLeft }}
         />
       );
     } else {
-      // let collapse = this.props.children ? (
-      //   <img src={require('../static/rightarrow.svg')} />
-      // ) : "";
-      content = <span style={{ paddingLeft }}>{numbering + heading.text}</span>;
+      content = <span style={{ paddingLeft }}>{heading.text}</span>;
     }
 
     return <li onClick={handleClick}>{content}</li>;
   }
 }
 
-export interface ITOCTreeStates {
-  needNumbering: boolean;
-  showCode: boolean;
-}
-
 /**
  * A React component for a table of contents.
  */
-export class TOCTree extends React.Component<ITOCTreeProps, ITOCTreeStates> {
+export class TOCTree extends React.Component<ITOCTreeProps, {}> {
   /**
    * Render the TOCTree.
    */
-
-  constructor(props: ITOCTreeProps) {
-    super(props);
-    this.state = {
-      needNumbering: this.props.widget.needNumbering,
-      showCode: this.props.widget.showCode
-    };
-  }
-
   render() {
     // Map the heading objects onto a list of JSX elements.
     let i = 0;
     let listing: JSX.Element[] = this.props.toc.map(el => {
-      if (el.type === 'code' && !this.state.showCode) {
-        return <div />;
-      } else {
-        return (
-          <TOCItem
-            needNumbering={this.state.needNumbering}
-            heading={el}
-            key={`${el.text}-${el.level}-${i++}`}
-          />
-        );
-      }
+      return <TOCItem heading={el} key={`${el.text}-${el.level}-${i++}`} />;
     });
-
-    const handleClick = (event: React.SyntheticEvent<HTMLButtonElement>) => {
-      this.props.widget.needNumbering = !this.props.widget.needNumbering;
-      this.setState({ needNumbering: this.props.widget.needNumbering });
-    };
-
-    const toggleCode = (event: React.ChangeEvent<HTMLInputElement>) => {
-      this.props.widget.showCode = event.target.checked;
-      this.setState({ showCode: this.props.widget.showCode });
-    };
 
     // Return the JSX component.
     return (
       <div className="jp-TableOfContents">
         <header>{this.props.title}</header>
-        <button onClick={event => handleClick(event)}>
-          Show/Hide Numbering
-        </button>
-        <input
-          type="checkbox"
-          onChange={event => toggleCode(event)}
-          checked={this.state.showCode}
-        />{' '}
-        Show code cells
         <ul className="jp-TableOfContents-content">{listing}</ul>
       </div>
     );
