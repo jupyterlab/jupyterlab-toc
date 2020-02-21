@@ -2,7 +2,6 @@
   "compilerOptions": {
     "declaration": true,
     "noImplicitAny": true,
-    "strictNullChecks": true,
     "skipLibCheck": true,
     "noEmitOnError": true,
     "noUnusedLocals": true,

@@ -3,7 +3,7 @@
 
 import * as React from 'react';
 import { INotebookTracker } from '@jupyterlab/notebook';
-import { JSONValue } from '@phosphor/coreutils';
+import { JSONValue } from '@lumino/coreutils';
 import { OptionsManager } from './options_manager';
 import { TagsToolComponent } from './tagstool';
 

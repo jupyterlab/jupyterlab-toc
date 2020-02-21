@@ -25,465 +25,562 @@
   dependencies:
     regenerator-runtime "^0.13.2"
 
-"@blueprintjs/core@^3.15.0", "@blueprintjs/core@^3.9.0":
-  version "3.16.2"
-  resolved "https://registry.yarnpkg.com/@blueprintjs/core/-/core-3.16.2.tgz#c232e44f14d0352b90335c32ca0c2f5fea032517"
-  integrity sha512-u+mSITWaNDwbdaPrbKx9XyxGsF4725SCAidWjd367ysX7AxCo4PK4SsFQVfXNylXpVWHQhJZekuo7+hdksc9lA==
+"@blueprintjs/core@^3.20.0", "@blueprintjs/core@^3.22.2":
+  version "3.23.1"
+  resolved "https://na.artifactory.swg-devops.com:443/artifactory/api/npm/wcp-wdp-npm-virtual/@blueprintjs/core/-/core-3.23.1.tgz?dl=https%3A%2F%2Fregistry.npmjs.org%2F%40blueprintjs%2Fcore%2F-%2Fcore-3.23.1.tgz&dl=https%3A%2F%2Fna-sl.artifactory.swg-devops.com%3A443%2Fartifactory%2Fapi%2Fnpm%2Ftaas-central-npm-virtual%2F%40blueprintjs%2Fcore%2F-%2Fcore-3.23.1.tgz%3Fdl%3Dhttps%3A%2F%2Fregistry.npmjs.org%2F%40blueprintjs%2Fcore%2F-%2Fcore-3.23.1.tgz#346bd5430494cc2965fa9cac7366dc94c9dcf918"
+  integrity sha1-NGvVQwSUzCll+pysc2bclMnc+Rg=
   dependencies:
-    "@blueprintjs/icons" "^3.8.0"
+    "@blueprintjs/icons" "^3.12.0"
     "@types/dom4" "^2.0.1"
     classnames "^2.2"
-    dom4 "^2.0.1"
-    normalize.css "^8.0.0"
-    popper.js "^1.14.1"
-    react-popper "^1.0.0"
-    react-transition-group "^2.2.1"
-    resize-observer-polyfill "^1.5.0"
-    tslib "^1.9.0"
+    dom4 "^2.1.5"
+    normalize.css "^8.0.1"
+    popper.js "^1.15.0"
+    react-lifecycles-compat "^3.0.4"
+    react-popper "^1.3.7"
+    react-transition-group "^2.9.0"
+    resize-observer-polyfill "^1.5.1"
+    tslib "~1.9.0"
 
-"@blueprintjs/icons@^3.3.0", "@blueprintjs/icons@^3.8.0":
-  version "3.9.0"
-  resolved "https://registry.yarnpkg.com/@blueprintjs/icons/-/icons-3.9.0.tgz#173f70b0d6a573d2a97066c54b4d110ffadeee51"
-  integrity sha512-kq1Bh6PtOF4PcuxcDme8NmnSlkfO0IV89FriZGo6zSA1+OOzSwzvoKqa6S7vJe8xCPPLO5r7lE9AjeOuGeH97g==
+"@blueprintjs/icons@^3.12.0":
+  version "3.13.0"
+  resolved "https://na.artifactory.swg-devops.com:443/artifactory/api/npm/wcp-wdp-npm-virtual/@blueprintjs/icons/-/icons-3.13.0.tgz?dl=https%3A%2F%2Fregistry.npmjs.org%2F%40blueprintjs%2Ficons%2F-%2Ficons-3.13.0.tgz&dl=https%3A%2F%2Fna-sl.artifactory.swg-devops.com%3A443%2Fartifactory%2Fapi%2Fnpm%2Ftaas-central-npm-virtual%2F%40blueprintjs%2Ficons%2F-%2Ficons-3.13.0.tgz%3Fdl%3Dhttps%3A%2F%2Fregistry.npmjs.org%2F%40blueprintjs%2Ficons%2F-%2Ficons-3.13.0.tgz#bff93a9ea5ced03afd2b3a65ddf4bb90bda485e4"
+  integrity sha1-v/k6nqXO0Dr9Kzpl3fS7kL2kheQ=
   dependencies:
     classnames "^2.2"
-    tslib "^1.9.0"
+    tslib "~1.9.0"
 
-"@blueprintjs/select@^3.3.0":
-  version "3.8.1"
-  resolved "https://registry.yarnpkg.com/@blueprintjs/select/-/select-3.8.1.tgz#e3a27746731b9cbaa9179620fdf3f3883a176ab9"
-  integrity sha512-CUWqdikGY04yzEWBFGpHRUfKc2kKP/w9ExXv7hrknuRZDJU8mQwzbPpxMqf/97/2m93vb1nYbjWN+QkSmDgOzQ==
+"@blueprintjs/select@^3.11.2":
+  version "3.11.2"
+  resolved "https://na.artifactory.swg-devops.com:443/artifactory/api/npm/wcp-wdp-npm-virtual/@blueprintjs/select/-/select-3.11.2.tgz?dl=https%3A%2F%2Fregistry.npmjs.org%2F%40blueprintjs%2Fselect%2F-%2Fselect-3.11.2.tgz&dl=https%3A%2F%2Fna-sl.artifactory.swg-devops.com%3A443%2Fartifactory%2Fapi%2Fnpm%2Ftaas-central-npm-virtual%2F%40blueprintjs%2Fselect%2F-%2Fselect-3.11.2.tgz%3Fdl%3Dhttps%3A%2F%2Fregistry.npmjs.org%2F%40blueprintjs%2Fselect%2F-%2Fselect-3.11.2.tgz#3324db0de44a9f386b957aac1ba3ec774b3eb1e7"
+  integrity sha1-MyTbDeRKnzhrlXqsG6Psd0s+sec=
   dependencies:
-    "@blueprintjs/core" "^3.15.0"
+    "@blueprintjs/core" "^3.20.0"
     classnames "^2.2"
-    tslib "^1.9.0"
+    tslib "~1.9.0"
 
-"@jupyterlab/application@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@jupyterlab/application/-/application-1.0.0.tgz#3cf975126b74bc85d936b1830d29017190a0fa24"
-  integrity sha512-fETjESqQKcJHDnyEyczz8KNIN8q8eLHjwiyWnx4aw44TkwbomANcdhuzkn7X1nw13zvroPEIc8Jfx0/2DXp5Gg==
-  dependencies:
-    "@jupyterlab/apputils" "^1.0.0"
-    "@jupyterlab/coreutils" "^3.0.0"
-    "@jupyterlab/docregistry" "^1.0.0"
-    "@jupyterlab/rendermime" "^1.0.0"
-    "@jupyterlab/rendermime-interfaces" "^1.3.0"
-    "@jupyterlab/services" "^4.0.0"
-    "@phosphor/algorithm" "^1.1.3"
-    "@phosphor/application" "^1.6.3"
-    "@phosphor/commands" "^1.6.3"
-    "@phosphor/coreutils" "^1.3.1"
-    "@phosphor/disposable" "^1.2.0"
-    "@phosphor/messaging" "^1.2.3"
-    "@phosphor/properties" "^1.1.3"
-    "@phosphor/signaling" "^1.2.3"
-    "@phosphor/widgets" "^1.8.0"
-    font-awesome "~4.7.0"
+"@fortawesome/fontawesome-free@^5.12.0":
+  version "5.12.1"
+  resolved "https://na.artifactory.swg-devops.com:443/artifactory/api/npm/wcp-wdp-npm-virtual/@fortawesome/fontawesome-free/-/fontawesome-free-5.12.1.tgz?dl=https%3A%2F%2Fregistry.npmjs.org%2F%40fortawesome%2Ffontawesome-free%2F-%2Ffontawesome-free-5.12.1.tgz&dl=https%3A%2F%2Fna-sl.artifactory.swg-devops.com%3A443%2Fartifactory%2Fapi%2Fnpm%2Ftaas-central-npm-virtual%2F%40fortawesome%2Ffontawesome-free%2F-%2Ffontawesome-free-5.12.1.tgz%3Fdl%3Dhttps%3A%2F%2Fregistry.npmjs.org%2F%40fortawesome%2Ffontawesome-free%2F-%2Ffontawesome-free-5.12.1.tgz#2a98fea9fbb8a606ddc79a4680034e9d5591c550"
+  integrity sha1-Kpj+qfu4pgbdx5pGgANOnVWRxVA=
 
-"@jupyterlab/apputils@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@jupyterlab/apputils/-/apputils-1.0.0.tgz#dbf11d1ab35064e49b8d4744fbaad3b0305ae8cf"
-  integrity sha512-YreD3ltKyLsFReZGwVOL7w2lOO5ujl8gNMNO8oh8gSeDtQMMzIPJCtS5bRIOe1qH+aWyk6OuS+SNyXPUpstb6A==
+"@jupyterlab/application@^2.0.0-rc.1":
+  version "2.0.0-rc.1"
+  resolved "https://na.artifactory.swg-devops.com:443/artifactory/api/npm/wcp-wdp-npm-virtual/@jupyterlab/application/-/application-2.0.0-rc.1.tgz?dl=https%3A%2F%2Fregistry.npmjs.org%2F%40jupyterlab%2Fapplication%2F-%2Fapplication-2.0.0-rc.1.tgz#b02d9718e0e4427dd29d62c96e19c356628c6407"
+  integrity sha1-sC2XGODkQn3SnWLJbhnDVmKMZAc=
   dependencies:
-    "@jupyterlab/coreutils" "^3.0.0"
-    "@jupyterlab/services" "^4.0.0"
-    "@jupyterlab/ui-components" "^1.0.0"
-    "@phosphor/algorithm" "^1.1.3"
-    "@phosphor/commands" "^1.6.3"
-    "@phosphor/coreutils" "^1.3.1"
-    "@phosphor/disposable" "^1.2.0"
-    "@phosphor/domutils" "^1.1.3"
-    "@phosphor/messaging" "^1.2.3"
-    "@phosphor/properties" "^1.1.3"
-    "@phosphor/signaling" "^1.2.3"
-    "@phosphor/virtualdom" "^1.1.3"
-    "@phosphor/widgets" "^1.8.0"
-    "@types/react" "~16.8.18"
-    react "~16.8.4"
-    react-dom "~16.8.4"
+    "@fortawesome/fontawesome-free" "^5.12.0"
+    "@jupyterlab/apputils" "^2.0.0-rc.1"
+    "@jupyterlab/coreutils" "^4.0.0-rc.1"
+    "@jupyterlab/docregistry" "^2.0.0-rc.1"
+    "@jupyterlab/rendermime" "^2.0.0-rc.1"
+    "@jupyterlab/rendermime-interfaces" "^2.0.0-rc.1"
+    "@jupyterlab/services" "^5.0.0-rc.1"
+    "@jupyterlab/statedb" "^2.0.0-rc.1"
+    "@jupyterlab/ui-components" "^2.0.0-rc.2"
+    "@lumino/algorithm" "^1.2.3"
+    "@lumino/application" "^1.8.2"
+    "@lumino/commands" "^1.9.2"
+    "@lumino/coreutils" "^1.4.2"
+    "@lumino/disposable" "^1.3.4"
+    "@lumino/messaging" "^1.3.3"
+    "@lumino/polling" "^1.0.3"
+    "@lumino/properties" "^1.1.6"
+    "@lumino/signaling" "^1.3.4"
+    "@lumino/widgets" "^1.10.2"
+
+"@jupyterlab/apputils@^2.0.0-rc.1":
+  version "2.0.0-rc.1"
+  resolved "https://na.artifactory.swg-devops.com:443/artifactory/api/npm/wcp-wdp-npm-virtual/@jupyterlab/apputils/-/apputils-2.0.0-rc.1.tgz?dl=https%3A%2F%2Fregistry.npmjs.org%2F%40jupyterlab%2Fapputils%2F-%2Fapputils-2.0.0-rc.1.tgz#25b855b41689e5c7c435f37c4effd88798b8c4cb"
+  integrity sha1-JbhVtBaJ5cfENfN8Tv/Yh5i4xMs=
+  dependencies:
+    "@jupyterlab/coreutils" "^4.0.0-rc.1"
+    "@jupyterlab/services" "^5.0.0-rc.1"
+    "@jupyterlab/settingregistry" "^2.0.0-rc.1"
+    "@jupyterlab/statedb" "^2.0.0-rc.1"
+    "@jupyterlab/ui-components" "^2.0.0-rc.2"
+    "@lumino/algorithm" "^1.2.3"
+    "@lumino/commands" "^1.9.2"
+    "@lumino/coreutils" "^1.4.2"
+    "@lumino/disposable" "^1.3.4"
+    "@lumino/domutils" "^1.1.7"
+    "@lumino/messaging" "^1.3.3"
+    "@lumino/properties" "^1.1.6"
+    "@lumino/signaling" "^1.3.4"
+    "@lumino/virtualdom" "^1.5.0"
+    "@lumino/widgets" "^1.10.2"
+    "@types/react" "~16.9.16"
+    react "~16.9.0"
+    react-dom "~16.9.0"
     sanitize-html "~1.20.1"
 
-"@jupyterlab/attachments@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@jupyterlab/attachments/-/attachments-1.0.0.tgz#4a070e6957f217f78fa2cc5d5a8d11628477389a"
-  integrity sha512-ZKHFyXXjoNW1Hu5ZQzhs4IhO1EtJPhs4+6IfZkyiJEBoVfEGhrlHUDMrkpgJdy7tY9smQs8nNBm98dMHv2YxEg==
+"@jupyterlab/attachments@^2.0.0-rc.1":
+  version "2.0.0-rc.1"
+  resolved "https://na.artifactory.swg-devops.com:443/artifactory/api/npm/wcp-wdp-npm-virtual/@jupyterlab/attachments/-/attachments-2.0.0-rc.1.tgz?dl=https%3A%2F%2Fregistry.npmjs.org%2F%40jupyterlab%2Fattachments%2F-%2Fattachments-2.0.0-rc.1.tgz#5076b60ac8315faa2b35aa81fd941392193c2adb"
+  integrity sha1-UHa2CsgxX6orNaqB/ZQTkhk8Kts=
   dependencies:
-    "@jupyterlab/coreutils" "^3.0.0"
-    "@jupyterlab/observables" "^2.2.0"
-    "@jupyterlab/rendermime" "^1.0.0"
-    "@jupyterlab/rendermime-interfaces" "^1.3.0"
-    "@phosphor/disposable" "^1.2.0"
-    "@phosphor/signaling" "^1.2.3"
+    "@jupyterlab/nbformat" "^2.0.0-rc.1"
+    "@jupyterlab/observables" "^3.0.0-rc.1"
+    "@jupyterlab/rendermime" "^2.0.0-rc.1"
+    "@jupyterlab/rendermime-interfaces" "^2.0.0-rc.1"
+    "@lumino/disposable" "^1.3.4"
+    "@lumino/signaling" "^1.3.4"
 
-"@jupyterlab/cells@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@jupyterlab/cells/-/cells-1.0.0.tgz#92a10c649664421bcce2c39478fee687ba78eef4"
-  integrity sha512-YeyFDC6GGUU4Z/fxsADpiwV9mfno/iImEOPObCe4/0dQw528y6JoF54iQLv+8tyoLNHag4R82CLUENNpGBTSmA==
+"@jupyterlab/cells@^2.0.0-rc.1":
+  version "2.0.0-rc.1"
+  resolved "https://na.artifactory.swg-devops.com:443/artifactory/api/npm/wcp-wdp-npm-virtual/@jupyterlab/cells/-/cells-2.0.0-rc.1.tgz?dl=https%3A%2F%2Fregistry.npmjs.org%2F%40jupyterlab%2Fcells%2F-%2Fcells-2.0.0-rc.1.tgz#c40aa7ea19a39d40454784f6632714f538dc2f98"
+  integrity sha1-xAqn6hmjnUBFR4T2YycU9TjcL5g=
   dependencies:
-    "@jupyterlab/apputils" "^1.0.0"
-    "@jupyterlab/attachments" "^1.0.0"
-    "@jupyterlab/codeeditor" "^1.0.0"
-    "@jupyterlab/codemirror" "^1.0.0"
-    "@jupyterlab/coreutils" "^3.0.0"
-    "@jupyterlab/observables" "^2.2.0"
-    "@jupyterlab/outputarea" "^1.0.0"
-    "@jupyterlab/rendermime" "^1.0.0"
-    "@jupyterlab/services" "^4.0.0"
-    "@phosphor/algorithm" "^1.1.3"
-    "@phosphor/coreutils" "^1.3.1"
-    "@phosphor/messaging" "^1.2.3"
-    "@phosphor/signaling" "^1.2.3"
-    "@phosphor/virtualdom" "^1.1.3"
-    "@phosphor/widgets" "^1.8.0"
-    react "~16.8.4"
+    "@jupyterlab/apputils" "^2.0.0-rc.1"
+    "@jupyterlab/attachments" "^2.0.0-rc.1"
+    "@jupyterlab/codeeditor" "^2.0.0-rc.1"
+    "@jupyterlab/codemirror" "^2.0.0-rc.1"
+    "@jupyterlab/coreutils" "^4.0.0-rc.1"
+    "@jupyterlab/filebrowser" "^2.0.0-rc.1"
+    "@jupyterlab/nbformat" "^2.0.0-rc.1"
+    "@jupyterlab/observables" "^3.0.0-rc.1"
+    "@jupyterlab/outputarea" "^2.0.0-rc.1"
+    "@jupyterlab/rendermime" "^2.0.0-rc.1"
+    "@jupyterlab/services" "^5.0.0-rc.1"
+    "@jupyterlab/ui-components" "^2.0.0-rc.2"
+    "@lumino/algorithm" "^1.2.3"
+    "@lumino/coreutils" "^1.4.2"
+    "@lumino/dragdrop" "^1.5.0"
+    "@lumino/messaging" "^1.3.3"
+    "@lumino/signaling" "^1.3.4"
+    "@lumino/virtualdom" "^1.5.0"
+    "@lumino/widgets" "^1.10.2"
+    react "~16.9.0"
 
-"@jupyterlab/codeeditor@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@jupyterlab/codeeditor/-/codeeditor-1.0.0.tgz#62fb62880330c83ecf0194ef91ec8302709f9c55"
-  integrity sha512-unv4RmDCXsWCW+ieL8je3X6sJValYQNVoHNWA1/RD6mOydh4G9sDmCZ6WM1DboG1OHnMr6pzz0HmA/jvA/JO1w==
+"@jupyterlab/codeeditor@^2.0.0-rc.1":
+  version "2.0.0-rc.1"
+  resolved "https://na.artifactory.swg-devops.com:443/artifactory/api/npm/wcp-wdp-npm-virtual/@jupyterlab/codeeditor/-/codeeditor-2.0.0-rc.1.tgz?dl=https%3A%2F%2Fregistry.npmjs.org%2F%40jupyterlab%2Fcodeeditor%2F-%2Fcodeeditor-2.0.0-rc.1.tgz#2967755857836913bec86299d3b2f9ebdea353e4"
+  integrity sha1-KWd1WFeDaRO+yGKZ07L5696jU+Q=
   dependencies:
-    "@jupyterlab/coreutils" "^3.0.0"
-    "@jupyterlab/observables" "^2.2.0"
-    "@phosphor/coreutils" "^1.3.1"
-    "@phosphor/disposable" "^1.2.0"
-    "@phosphor/dragdrop" "^1.3.3"
-    "@phosphor/messaging" "^1.2.3"
-    "@phosphor/signaling" "^1.2.3"
-    "@phosphor/widgets" "^1.8.0"
+    "@jupyterlab/coreutils" "^4.0.0-rc.1"
+    "@jupyterlab/nbformat" "^2.0.0-rc.1"
+    "@jupyterlab/observables" "^3.0.0-rc.1"
+    "@jupyterlab/ui-components" "^2.0.0-rc.2"
+    "@lumino/coreutils" "^1.4.2"
+    "@lumino/disposable" "^1.3.4"
+    "@lumino/dragdrop" "^1.5.0"
+    "@lumino/messaging" "^1.3.3"
+    "@lumino/signaling" "^1.3.4"
+    "@lumino/widgets" "^1.10.2"
 
-"@jupyterlab/codemirror@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@jupyterlab/codemirror/-/codemirror-1.0.0.tgz#0c5b6561f704793f24f8a6464ee41c76f6e278d3"
-  integrity sha512-HIgBxNygC02h6hVpNOZujcCgUge/bS0rDHTzqbpq+ZEqe13SNZ8JBJrz0opuZ0YDfoPVKpZcOs45BD3sv92dIQ==
+"@jupyterlab/codemirror@^2.0.0-rc.1":
+  version "2.0.0-rc.1"
+  resolved "https://na.artifactory.swg-devops.com:443/artifactory/api/npm/wcp-wdp-npm-virtual/@jupyterlab/codemirror/-/codemirror-2.0.0-rc.1.tgz?dl=https%3A%2F%2Fregistry.npmjs.org%2F%40jupyterlab%2Fcodemirror%2F-%2Fcodemirror-2.0.0-rc.1.tgz#51e5f3ebc75a6b3c955e17fb635bec77079871d4"
+  integrity sha1-UeXz68daazyVXhf7Y1vsdweYcdQ=
   dependencies:
-    "@jupyterlab/apputils" "^1.0.0"
-    "@jupyterlab/codeeditor" "^1.0.0"
-    "@jupyterlab/coreutils" "^3.0.0"
-    "@jupyterlab/observables" "^2.2.0"
-    "@jupyterlab/statusbar" "^1.0.0"
-    "@phosphor/algorithm" "^1.1.3"
-    "@phosphor/commands" "^1.6.3"
-    "@phosphor/coreutils" "^1.3.1"
-    "@phosphor/disposable" "^1.2.0"
-    "@phosphor/signaling" "^1.2.3"
-    "@phosphor/widgets" "^1.8.0"
-    codemirror "~5.47.0"
-    react "~16.8.4"
+    "@jupyterlab/apputils" "^2.0.0-rc.1"
+    "@jupyterlab/codeeditor" "^2.0.0-rc.1"
+    "@jupyterlab/coreutils" "^4.0.0-rc.1"
+    "@jupyterlab/nbformat" "^2.0.0-rc.1"
+    "@jupyterlab/observables" "^3.0.0-rc.1"
+    "@jupyterlab/statusbar" "^2.0.0-rc.1"
+    "@lumino/algorithm" "^1.2.3"
+    "@lumino/commands" "^1.9.2"
+    "@lumino/coreutils" "^1.4.2"
+    "@lumino/disposable" "^1.3.4"
+    "@lumino/polling" "^1.0.3"
+    "@lumino/signaling" "^1.3.4"
+    "@lumino/widgets" "^1.10.2"
+    codemirror "~5.49.2"
+    react "~16.9.0"
 
-"@jupyterlab/coreutils@^3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@jupyterlab/coreutils/-/coreutils-3.0.0.tgz#b636e2d478d7098ff12439de3cf4312edd945c09"
-  integrity sha512-l48G1qhff4CZpsxjje92S6caLUixzfDMAD5vjNZL9obexUAMF+344cpVWsm2r2CQROUW7bPB8wjAtFbp8nK/QQ==
+"@jupyterlab/coreutils@^4.0.0-rc.1":
+  version "4.0.0-rc.1"
+  resolved "https://na.artifactory.swg-devops.com:443/artifactory/api/npm/wcp-wdp-npm-virtual/@jupyterlab/coreutils/-/coreutils-4.0.0-rc.1.tgz?dl=https%3A%2F%2Fregistry.npmjs.org%2F%40jupyterlab%2Fcoreutils%2F-%2Fcoreutils-4.0.0-rc.1.tgz#c0fe0a38396d4bc6a36ebba0c8bd82c8dba3c964"
+  integrity sha1-wP4KODltS8ajbrugyL2CyNujyWQ=
   dependencies:
-    "@phosphor/commands" "^1.6.3"
-    "@phosphor/coreutils" "^1.3.1"
-    "@phosphor/disposable" "^1.2.0"
-    "@phosphor/properties" "^1.1.3"
-    "@phosphor/signaling" "^1.2.3"
-    ajv "^6.5.5"
-    json5 "^2.1.0"
+    "@lumino/coreutils" "^1.4.2"
+    "@lumino/disposable" "^1.3.4"
+    "@lumino/signaling" "^1.3.4"
     minimist "~1.2.0"
     moment "^2.24.0"
     path-posix "~1.0.0"
-    url-parse "~1.4.3"
+    url-parse "~1.4.7"
 
-"@jupyterlab/docmanager@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@jupyterlab/docmanager/-/docmanager-1.0.0.tgz#147ecf9b958a2bb576bcbc6e62cddfbe105db17c"
-  integrity sha512-9KEwoTu1Q0TJqmvhbCd81id/pPAx4+qlAI/0UVTHqVPlbkiy8TNYY/6L5BSxDNZmUuLhJUQzjYf/cBwZ7Oz3mg==
+"@jupyterlab/docmanager@^2.0.0-rc.1":
+  version "2.0.0-rc.1"
+  resolved "https://na.artifactory.swg-devops.com:443/artifactory/api/npm/wcp-wdp-npm-virtual/@jupyterlab/docmanager/-/docmanager-2.0.0-rc.1.tgz?dl=https%3A%2F%2Fregistry.npmjs.org%2F%40jupyterlab%2Fdocmanager%2F-%2Fdocmanager-2.0.0-rc.1.tgz#4eb3d168f371c834573d3ef5e346ff91e8f5ff4e"
+  integrity sha1-TrPRaPNxyDRXPT7140b/kej1/04=
   dependencies:
-    "@jupyterlab/apputils" "^1.0.0"
-    "@jupyterlab/coreutils" "^3.0.0"
-    "@jupyterlab/docregistry" "^1.0.0"
-    "@jupyterlab/services" "^4.0.0"
-    "@jupyterlab/statusbar" "^1.0.0"
-    "@phosphor/algorithm" "^1.1.3"
-    "@phosphor/coreutils" "^1.3.1"
-    "@phosphor/disposable" "^1.2.0"
-    "@phosphor/messaging" "^1.2.3"
-    "@phosphor/properties" "^1.1.3"
-    "@phosphor/signaling" "^1.2.3"
-    "@phosphor/widgets" "^1.8.0"
-    react "~16.8.4"
+    "@jupyterlab/apputils" "^2.0.0-rc.1"
+    "@jupyterlab/coreutils" "^4.0.0-rc.1"
+    "@jupyterlab/docregistry" "^2.0.0-rc.1"
+    "@jupyterlab/services" "^5.0.0-rc.1"
+    "@jupyterlab/statusbar" "^2.0.0-rc.1"
+    "@lumino/algorithm" "^1.2.3"
+    "@lumino/coreutils" "^1.4.2"
+    "@lumino/disposable" "^1.3.4"
+    "@lumino/messaging" "^1.3.3"
+    "@lumino/properties" "^1.1.6"
+    "@lumino/signaling" "^1.3.4"
+    "@lumino/widgets" "^1.10.2"
+    react "~16.9.0"
 
-"@jupyterlab/docregistry@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@jupyterlab/docregistry/-/docregistry-1.0.0.tgz#0d315396256e40de2b1ec71098383553ea41cef0"
-  integrity sha512-Gm+KCf/I+P0eQfl5yDbrYSdRW9ZdicDwcmJuSNGaeZVOuBuEP+w+s89shICaSqo2c1vFhmikUPSo3LZQP3gWgw==
+"@jupyterlab/docregistry@^2.0.0-rc.1":
+  version "2.0.0-rc.1"
+  resolved "https://na.artifactory.swg-devops.com:443/artifactory/api/npm/wcp-wdp-npm-virtual/@jupyterlab/docregistry/-/docregistry-2.0.0-rc.1.tgz?dl=https%3A%2F%2Fregistry.npmjs.org%2F%40jupyterlab%2Fdocregistry%2F-%2Fdocregistry-2.0.0-rc.1.tgz#b447e6b485f5865a6ab8f37339964dc48bdd3fbc"
+  integrity sha1-tEfmtIX1hlpquPNzOZZNxIvdP7w=
   dependencies:
-    "@jupyterlab/apputils" "^1.0.0"
-    "@jupyterlab/codeeditor" "^1.0.0"
-    "@jupyterlab/codemirror" "^1.0.0"
-    "@jupyterlab/coreutils" "^3.0.0"
-    "@jupyterlab/observables" "^2.2.0"
-    "@jupyterlab/rendermime" "^1.0.0"
-    "@jupyterlab/rendermime-interfaces" "^1.3.0"
-    "@jupyterlab/services" "^4.0.0"
-    "@phosphor/algorithm" "^1.1.3"
-    "@phosphor/coreutils" "^1.3.1"
-    "@phosphor/disposable" "^1.2.0"
-    "@phosphor/messaging" "^1.2.3"
-    "@phosphor/signaling" "^1.2.3"
-    "@phosphor/widgets" "^1.8.0"
+    "@jupyterlab/apputils" "^2.0.0-rc.1"
+    "@jupyterlab/codeeditor" "^2.0.0-rc.1"
+    "@jupyterlab/codemirror" "^2.0.0-rc.1"
+    "@jupyterlab/coreutils" "^4.0.0-rc.1"
+    "@jupyterlab/observables" "^3.0.0-rc.1"
+    "@jupyterlab/rendermime" "^2.0.0-rc.1"
+    "@jupyterlab/rendermime-interfaces" "^2.0.0-rc.1"
+    "@jupyterlab/services" "^5.0.0-rc.1"
+    "@jupyterlab/ui-components" "^2.0.0-rc.2"
+    "@lumino/algorithm" "^1.2.3"
+    "@lumino/coreutils" "^1.4.2"
+    "@lumino/disposable" "^1.3.4"
+    "@lumino/messaging" "^1.3.3"
+    "@lumino/signaling" "^1.3.4"
+    "@lumino/widgets" "^1.10.2"
 
-"@jupyterlab/fileeditor@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@jupyterlab/fileeditor/-/fileeditor-1.0.0.tgz#0ad7b57e7ffdd87e8cdece4975535e099aed7637"
-  integrity sha512-GLZvCz/S0c55iHJcPaHjBK5/N48U9WN773aWVpbHCUpcUkwxwqdWjs9rjtJ0tQQeyMkC/84w5Thj+Yx+KiXTyg==
+"@jupyterlab/filebrowser@^2.0.0-rc.1":
+  version "2.0.0-rc.1"
+  resolved "https://na.artifactory.swg-devops.com:443/artifactory/api/npm/wcp-wdp-npm-virtual/@jupyterlab/filebrowser/-/filebrowser-2.0.0-rc.1.tgz?dl=https%3A%2F%2Fregistry.npmjs.org%2F%40jupyterlab%2Ffilebrowser%2F-%2Ffilebrowser-2.0.0-rc.1.tgz#a8432fde74a9e50741f545030cffda26a837a842"
+  integrity sha1-qEMv3nSp5QdB9UUDDP/aJqg3qEI=
   dependencies:
-    "@jupyterlab/apputils" "^1.0.0"
-    "@jupyterlab/codeeditor" "^1.0.0"
-    "@jupyterlab/docregistry" "^1.0.0"
-    "@jupyterlab/statusbar" "^1.0.0"
-    "@phosphor/coreutils" "^1.3.1"
-    "@phosphor/messaging" "^1.2.3"
-    "@phosphor/widgets" "^1.8.0"
-    react "~16.8.4"
+    "@jupyterlab/apputils" "^2.0.0-rc.1"
+    "@jupyterlab/coreutils" "^4.0.0-rc.1"
+    "@jupyterlab/docmanager" "^2.0.0-rc.1"
+    "@jupyterlab/docregistry" "^2.0.0-rc.1"
+    "@jupyterlab/services" "^5.0.0-rc.1"
+    "@jupyterlab/statedb" "^2.0.0-rc.1"
+    "@jupyterlab/statusbar" "^2.0.0-rc.1"
+    "@jupyterlab/ui-components" "^2.0.0-rc.2"
+    "@lumino/algorithm" "^1.2.3"
+    "@lumino/coreutils" "^1.4.2"
+    "@lumino/disposable" "^1.3.4"
+    "@lumino/domutils" "^1.1.7"
+    "@lumino/dragdrop" "^1.5.0"
+    "@lumino/messaging" "^1.3.3"
+    "@lumino/polling" "^1.0.3"
+    "@lumino/signaling" "^1.3.4"
+    "@lumino/widgets" "^1.10.2"
+    react "~16.9.0"
 
-"@jupyterlab/markdownviewer@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@jupyterlab/markdownviewer/-/markdownviewer-1.0.0.tgz#094f5827186badf3765dba40d35865882c46dbdf"
-  integrity sha512-6/MHq3ZG8DKjzCO3GPD6ZcSCh9qZV/TsEe0VNcm/0b+AeK8Svvn4psPJqNu3+jGqZzkNwTMHP6p++OSIt4kFiw==
+"@jupyterlab/fileeditor@^2.0.0-rc.1":
+  version "2.0.0-rc.1"
+  resolved "https://na.artifactory.swg-devops.com:443/artifactory/api/npm/wcp-wdp-npm-virtual/@jupyterlab/fileeditor/-/fileeditor-2.0.0-rc.1.tgz?dl=https%3A%2F%2Fregistry.npmjs.org%2F%40jupyterlab%2Ffileeditor%2F-%2Ffileeditor-2.0.0-rc.1.tgz#e9b7a1228e8952c170d988f1eb7ab528dabae1b9"
+  integrity sha1-6behIo6JUsFw2Yjx63q1KNq64bk=
   dependencies:
-    "@jupyterlab/apputils" "^1.0.0"
-    "@jupyterlab/coreutils" "^3.0.0"
-    "@jupyterlab/docregistry" "^1.0.0"
-    "@jupyterlab/rendermime" "^1.0.0"
-    "@phosphor/coreutils" "^1.3.1"
-    "@phosphor/messaging" "^1.2.3"
-    "@phosphor/widgets" "^1.8.0"
+    "@jupyterlab/apputils" "^2.0.0-rc.1"
+    "@jupyterlab/codeeditor" "^2.0.0-rc.1"
+    "@jupyterlab/docregistry" "^2.0.0-rc.1"
+    "@jupyterlab/statusbar" "^2.0.0-rc.1"
+    "@jupyterlab/ui-components" "^2.0.0-rc.2"
+    "@lumino/coreutils" "^1.4.2"
+    "@lumino/messaging" "^1.3.3"
+    "@lumino/widgets" "^1.10.2"
+    react "~16.9.0"
 
-"@jupyterlab/notebook@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@jupyterlab/notebook/-/notebook-1.0.0.tgz#85b90349ceea1a853418ff6c4a07befee2472b97"
-  integrity sha512-3R1FVbvfNG7ADAWweUGs28kN43QM31ENIHmX7g2CdQq9r0xKgFcS5K1630Ot69Aok+I4jej5KJ2OIxMBUcuK2A==
+"@jupyterlab/markdownviewer@^2.0.0-rc.1":
+  version "2.0.0-rc.1"
+  resolved "https://na.artifactory.swg-devops.com:443/artifactory/api/npm/wcp-wdp-npm-virtual/@jupyterlab/markdownviewer/-/markdownviewer-2.0.0-rc.1.tgz?dl=https%3A%2F%2Fregistry.npmjs.org%2F%40jupyterlab%2Fmarkdownviewer%2F-%2Fmarkdownviewer-2.0.0-rc.1.tgz#441278f406363c5503bfdb54978dffc0650ad779"
+  integrity sha1-RBJ49AY2PFUDv9tUl43/wGUK13k=
   dependencies:
-    "@jupyterlab/apputils" "^1.0.0"
-    "@jupyterlab/cells" "^1.0.0"
-    "@jupyterlab/codeeditor" "^1.0.0"
-    "@jupyterlab/coreutils" "^3.0.0"
-    "@jupyterlab/docregistry" "^1.0.0"
-    "@jupyterlab/observables" "^2.2.0"
-    "@jupyterlab/rendermime" "^1.0.0"
-    "@jupyterlab/services" "^4.0.0"
-    "@jupyterlab/statusbar" "^1.0.0"
-    "@jupyterlab/ui-components" "^1.0.0"
-    "@phosphor/algorithm" "^1.1.3"
-    "@phosphor/coreutils" "^1.3.1"
-    "@phosphor/domutils" "^1.1.3"
-    "@phosphor/dragdrop" "^1.3.3"
-    "@phosphor/messaging" "^1.2.3"
-    "@phosphor/properties" "^1.1.3"
-    "@phosphor/signaling" "^1.2.3"
-    "@phosphor/virtualdom" "^1.1.3"
-    "@phosphor/widgets" "^1.8.0"
-    react "~16.8.4"
+    "@jupyterlab/apputils" "^2.0.0-rc.1"
+    "@jupyterlab/coreutils" "^4.0.0-rc.1"
+    "@jupyterlab/docregistry" "^2.0.0-rc.1"
+    "@jupyterlab/rendermime" "^2.0.0-rc.1"
+    "@lumino/coreutils" "^1.4.2"
+    "@lumino/messaging" "^1.3.3"
+    "@lumino/widgets" "^1.10.2"
 
-"@jupyterlab/observables@^2.2.0":
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/@jupyterlab/observables/-/observables-2.2.0.tgz#be29c6cadad88c202e7963ace2410bbe7b101226"
-  integrity sha512-/oi7vl70yAX5QTXmZafyDSwU8fT1Oa/MdpDDYGkc5IklW0kU3NDqSoawfLovkdgGZvCOCM+6JQqUPRdhn8VZqg==
+"@jupyterlab/nbformat@^2.0.0-rc.1":
+  version "2.0.0-rc.1"
+  resolved "https://na.artifactory.swg-devops.com:443/artifactory/api/npm/wcp-wdp-npm-virtual/@jupyterlab/nbformat/-/nbformat-2.0.0-rc.1.tgz?dl=https%3A%2F%2Fregistry.npmjs.org%2F%40jupyterlab%2Fnbformat%2F-%2Fnbformat-2.0.0-rc.1.tgz#b9b6b473025df603fa0c116ca99b39754ba0cafc"
+  integrity sha1-uba0cwJd9gP6DBFsqZs5dUugyvw=
   dependencies:
-    "@phosphor/algorithm" "^1.1.3"
-    "@phosphor/coreutils" "^1.3.1"
-    "@phosphor/disposable" "^1.2.0"
-    "@phosphor/messaging" "^1.2.3"
-    "@phosphor/signaling" "^1.2.3"
+    "@lumino/coreutils" "^1.4.2"
 
-"@jupyterlab/outputarea@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@jupyterlab/outputarea/-/outputarea-1.0.0.tgz#d87ba47bfffd4eb263247eddad25a18b89ee33f9"
-  integrity sha512-9RGsQAdxKf5xyvDsp1pB6VDoDzvB0JK+s5qFYK54lbK/p8EAvjNe2SsXzEHBH9wCnARFeHC0LssyyoX2ct7ujw==
+"@jupyterlab/notebook@^2.0.0-rc.1":
+  version "2.0.0-rc.1"
+  resolved "https://na.artifactory.swg-devops.com:443/artifactory/api/npm/wcp-wdp-npm-virtual/@jupyterlab/notebook/-/notebook-2.0.0-rc.1.tgz?dl=https%3A%2F%2Fregistry.npmjs.org%2F%40jupyterlab%2Fnotebook%2F-%2Fnotebook-2.0.0-rc.1.tgz#adf9874978828038844bc410a6e0d15f42d443b3"
+  integrity sha1-rfmHSXiCgDiES8QQpuDRX0LUQ7M=
   dependencies:
-    "@jupyterlab/apputils" "^1.0.0"
-    "@jupyterlab/coreutils" "^3.0.0"
-    "@jupyterlab/observables" "^2.2.0"
-    "@jupyterlab/rendermime" "^1.0.0"
-    "@jupyterlab/rendermime-interfaces" "^1.3.0"
-    "@jupyterlab/services" "^4.0.0"
-    "@phosphor/algorithm" "^1.1.3"
-    "@phosphor/coreutils" "^1.3.1"
-    "@phosphor/disposable" "^1.2.0"
-    "@phosphor/messaging" "^1.2.3"
-    "@phosphor/signaling" "^1.2.3"
-    "@phosphor/widgets" "^1.8.0"
+    "@jupyterlab/apputils" "^2.0.0-rc.1"
+    "@jupyterlab/cells" "^2.0.0-rc.1"
+    "@jupyterlab/codeeditor" "^2.0.0-rc.1"
+    "@jupyterlab/coreutils" "^4.0.0-rc.1"
+    "@jupyterlab/docregistry" "^2.0.0-rc.1"
+    "@jupyterlab/nbformat" "^2.0.0-rc.1"
+    "@jupyterlab/observables" "^3.0.0-rc.1"
+    "@jupyterlab/rendermime" "^2.0.0-rc.1"
+    "@jupyterlab/services" "^5.0.0-rc.1"
+    "@jupyterlab/statusbar" "^2.0.0-rc.1"
+    "@jupyterlab/ui-components" "^2.0.0-rc.2"
+    "@lumino/algorithm" "^1.2.3"
+    "@lumino/coreutils" "^1.4.2"
+    "@lumino/domutils" "^1.1.7"
+    "@lumino/dragdrop" "^1.5.0"
+    "@lumino/messaging" "^1.3.3"
+    "@lumino/properties" "^1.1.6"
+    "@lumino/signaling" "^1.3.4"
+    "@lumino/virtualdom" "^1.5.0"
+    "@lumino/widgets" "^1.10.2"
+    react "~16.9.0"
 
-"@jupyterlab/rendermime-interfaces@^1.3.0":
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/@jupyterlab/rendermime-interfaces/-/rendermime-interfaces-1.3.0.tgz#1911f3da7fda38cb36c0771a02cb75a8af544502"
-  integrity sha512-04ohT/xdTcdp/TKuNMqY1MLwh7IWyjbMrQXiuwanE8xo52fIe6OIK0DENwc6VDMej1+8NVSU7rX42urLCex0sA==
+"@jupyterlab/observables@^3.0.0-rc.1":
+  version "3.0.0-rc.1"
+  resolved "https://na.artifactory.swg-devops.com:443/artifactory/api/npm/wcp-wdp-npm-virtual/@jupyterlab/observables/-/observables-3.0.0-rc.1.tgz?dl=https%3A%2F%2Fregistry.npmjs.org%2F%40jupyterlab%2Fobservables%2F-%2Fobservables-3.0.0-rc.1.tgz#86f873dc788390b7fa7bb21cd83d7d046289b2be"
+  integrity sha1-hvhz3HiDkLf6e7Ic2D19BGKJsr4=
   dependencies:
-    "@phosphor/coreutils" "^1.3.1"
-    "@phosphor/widgets" "^1.8.0"
+    "@lumino/algorithm" "^1.2.3"
+    "@lumino/coreutils" "^1.4.2"
+    "@lumino/disposable" "^1.3.4"
+    "@lumino/messaging" "^1.3.3"
+    "@lumino/signaling" "^1.3.4"
 
-"@jupyterlab/rendermime@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@jupyterlab/rendermime/-/rendermime-1.0.0.tgz#6d02e042b7eff4c5cb94e05282e25112c6d70c91"
-  integrity sha512-Alje439y7kHYsF6RmRnYGm6yYvUHoMeHk5Z6TcYMDsDq3DlE3Yx3Ra93ykMpY0ZtjtgGhFus78bPVOkUxg24hw==
+"@jupyterlab/outputarea@^2.0.0-rc.1":
+  version "2.0.0-rc.1"
+  resolved "https://na.artifactory.swg-devops.com:443/artifactory/api/npm/wcp-wdp-npm-virtual/@jupyterlab/outputarea/-/outputarea-2.0.0-rc.1.tgz?dl=https%3A%2F%2Fregistry.npmjs.org%2F%40jupyterlab%2Foutputarea%2F-%2Foutputarea-2.0.0-rc.1.tgz#f40c92c966c3e54d7c7d423e4cbbd4616bd31232"
+  integrity sha1-9AySyWbD5U18fUI+TLvUYWvTEjI=
   dependencies:
-    "@jupyterlab/apputils" "^1.0.0"
-    "@jupyterlab/codemirror" "^1.0.0"
-    "@jupyterlab/coreutils" "^3.0.0"
-    "@jupyterlab/observables" "^2.2.0"
-    "@jupyterlab/rendermime-interfaces" "^1.3.0"
-    "@jupyterlab/services" "^4.0.0"
-    "@phosphor/algorithm" "^1.1.3"
-    "@phosphor/coreutils" "^1.3.1"
-    "@phosphor/messaging" "^1.2.3"
-    "@phosphor/signaling" "^1.2.3"
-    "@phosphor/widgets" "^1.8.0"
+    "@jupyterlab/apputils" "^2.0.0-rc.1"
+    "@jupyterlab/nbformat" "^2.0.0-rc.1"
+    "@jupyterlab/observables" "^3.0.0-rc.1"
+    "@jupyterlab/rendermime" "^2.0.0-rc.1"
+    "@jupyterlab/rendermime-interfaces" "^2.0.0-rc.1"
+    "@jupyterlab/services" "^5.0.0-rc.1"
+    "@lumino/algorithm" "^1.2.3"
+    "@lumino/coreutils" "^1.4.2"
+    "@lumino/disposable" "^1.3.4"
+    "@lumino/messaging" "^1.3.3"
+    "@lumino/properties" "^1.1.6"
+    "@lumino/signaling" "^1.3.4"
+    "@lumino/widgets" "^1.10.2"
+
+"@jupyterlab/rendermime-interfaces@^2.0.0-rc.1":
+  version "2.0.0-rc.1"
+  resolved "https://na.artifactory.swg-devops.com:443/artifactory/api/npm/wcp-wdp-npm-virtual/@jupyterlab/rendermime-interfaces/-/rendermime-interfaces-2.0.0-rc.1.tgz?dl=https%3A%2F%2Fregistry.npmjs.org%2F%40jupyterlab%2Frendermime-interfaces%2F-%2Frendermime-interfaces-2.0.0-rc.1.tgz#75ca76d79fbe90b4793be422d23bae8fc3aaa6f0"
+  integrity sha1-dcp215++kLR5O+Qi0juuj8OqpvA=
+  dependencies:
+    "@lumino/coreutils" "^1.4.2"
+    "@lumino/widgets" "^1.10.2"
+
+"@jupyterlab/rendermime@^2.0.0-rc.1":
+  version "2.0.0-rc.1"
+  resolved "https://na.artifactory.swg-devops.com:443/artifactory/api/npm/wcp-wdp-npm-virtual/@jupyterlab/rendermime/-/rendermime-2.0.0-rc.1.tgz?dl=https%3A%2F%2Fregistry.npmjs.org%2F%40jupyterlab%2Frendermime%2F-%2Frendermime-2.0.0-rc.1.tgz#534649ebfeaeca601f819a4f75cd284e80b7257f"
+  integrity sha1-U0ZJ6/6uymAfgZpPdc0oToC3JX8=
+  dependencies:
+    "@jupyterlab/apputils" "^2.0.0-rc.1"
+    "@jupyterlab/codemirror" "^2.0.0-rc.1"
+    "@jupyterlab/coreutils" "^4.0.0-rc.1"
+    "@jupyterlab/nbformat" "^2.0.0-rc.1"
+    "@jupyterlab/observables" "^3.0.0-rc.1"
+    "@jupyterlab/rendermime-interfaces" "^2.0.0-rc.1"
+    "@jupyterlab/services" "^5.0.0-rc.1"
+    "@lumino/algorithm" "^1.2.3"
+    "@lumino/coreutils" "^1.4.2"
+    "@lumino/messaging" "^1.3.3"
+    "@lumino/signaling" "^1.3.4"
+    "@lumino/widgets" "^1.10.2"
     lodash.escape "^4.0.1"
-    marked "0.6.2"
+    marked "^0.8.0"
 
-"@jupyterlab/services@^4.0.0":
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/@jupyterlab/services/-/services-4.0.0.tgz#f21bc36223023fa750b0e31d142eb6464357db5b"
-  integrity sha512-yCchogfzZqGWXagDJDRxsEMbKwsmf+EFVJRzf5H5OKZs7c/0yNemhG2qjRSmcErD87nUezB3NHkJSVPqz11D3g==
+"@jupyterlab/services@^5.0.0-rc.1":
+  version "5.0.0-rc.1"
+  resolved "https://na.artifactory.swg-devops.com:443/artifactory/api/npm/wcp-wdp-npm-virtual/@jupyterlab/services/-/services-5.0.0-rc.1.tgz?dl=https%3A%2F%2Fregistry.npmjs.org%2F%40jupyterlab%2Fservices%2F-%2Fservices-5.0.0-rc.1.tgz&dl=https%3A%2F%2Fna-sl.artifactory.swg-devops.com%3A443%2Fartifactory%2Fapi%2Fnpm%2Ftaas-central-npm-virtual%2F%40jupyterlab%2Fservices%2F-%2Fservices-5.0.0-rc.1.tgz%3Fdl%3Dhttps%3A%2F%2Fregistry.npmjs.org%2F%40jupyterlab%2Fservices%2F-%2Fservices-5.0.0-rc.1.tgz#5c6fd7f6ca163cc18be6f51e0313049a157b081f"
+  integrity sha1-XG/X9soWPMGL5vUeAxMEmhV7CB8=
   dependencies:
-    "@jupyterlab/coreutils" "^3.0.0"
-    "@jupyterlab/observables" "^2.2.0"
-    "@phosphor/algorithm" "^1.1.3"
-    "@phosphor/coreutils" "^1.3.1"
-    "@phosphor/disposable" "^1.2.0"
-    "@phosphor/signaling" "^1.2.3"
+    "@jupyterlab/coreutils" "^4.0.0-rc.1"
+    "@jupyterlab/nbformat" "^2.0.0-rc.1"
+    "@jupyterlab/observables" "^3.0.0-rc.1"
+    "@jupyterlab/settingregistry" "^2.0.0-rc.1"
+    "@jupyterlab/statedb" "^2.0.0-rc.1"
+    "@lumino/algorithm" "^1.2.3"
+    "@lumino/coreutils" "^1.4.2"
+    "@lumino/disposable" "^1.3.4"
+    "@lumino/polling" "^1.0.3"
+    "@lumino/signaling" "^1.3.4"
     node-fetch "^2.6.0"
-    ws "^7.0.0"
+    ws "^7.2.0"
 
-"@jupyterlab/statusbar@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@jupyterlab/statusbar/-/statusbar-1.0.0.tgz#e348598693caaa72f13a948d72c580f7cf5fd85d"
-  integrity sha512-UjLsRdVCwHJjUApU+n9C6mQCbKfL+2wmCAeQXd1p5R3SXmsn2VGh6EWCW733uMY2+K2Fqwwjf8ryJ1LwUc9+iQ==
+"@jupyterlab/settingregistry@^2.0.0-rc.1":
+  version "2.0.0-rc.1"
+  resolved "https://na.artifactory.swg-devops.com:443/artifactory/api/npm/wcp-wdp-npm-virtual/@jupyterlab/settingregistry/-/settingregistry-2.0.0-rc.1.tgz?dl=https%3A%2F%2Fregistry.npmjs.org%2F%40jupyterlab%2Fsettingregistry%2F-%2Fsettingregistry-2.0.0-rc.1.tgz#abf6fea1f5c3896bedfb020b820abe4a4ae3a6b9"
+  integrity sha1-q/b+ofXDiWvt+wILggq+Skrjprk=
   dependencies:
-    "@jupyterlab/apputils" "^1.0.0"
-    "@jupyterlab/codeeditor" "^1.0.0"
-    "@jupyterlab/coreutils" "^3.0.0"
-    "@jupyterlab/services" "^4.0.0"
-    "@phosphor/algorithm" "^1.1.3"
-    "@phosphor/coreutils" "^1.3.1"
-    "@phosphor/disposable" "^1.2.0"
-    "@phosphor/messaging" "^1.2.3"
-    "@phosphor/signaling" "^1.2.3"
-    "@phosphor/widgets" "^1.8.0"
-    react "~16.8.4"
-    typestyle "^2.0.1"
+    "@jupyterlab/statedb" "^2.0.0-rc.1"
+    "@lumino/commands" "^1.9.2"
+    "@lumino/coreutils" "^1.4.2"
+    "@lumino/disposable" "^1.3.4"
+    "@lumino/signaling" "^1.3.4"
+    ajv "^6.10.2"
+    json5 "^2.1.1"
 
-"@jupyterlab/ui-components@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@jupyterlab/ui-components/-/ui-components-1.0.0.tgz#f82b00a68a24434ae56bee01d951aa4e087bb687"
-  integrity sha512-rR9I/wsznbuOj09gYvEWQo0fnze3ehK2dPWLY6ToE4k8qj9s39ViY48/jOoaQSaLLRaMD8M8B8ZWY0Cf+400bA==
+"@jupyterlab/statedb@^2.0.0-rc.1":
+  version "2.0.0-rc.1"
+  resolved "https://na.artifactory.swg-devops.com:443/artifactory/api/npm/wcp-wdp-npm-virtual/@jupyterlab/statedb/-/statedb-2.0.0-rc.1.tgz?dl=https%3A%2F%2Fregistry.npmjs.org%2F%40jupyterlab%2Fstatedb%2F-%2Fstatedb-2.0.0-rc.1.tgz#d146c23f6777e9ab557ff6b99e3ceb7d59e74fab"
+  integrity sha1-0UbCP2d36atVf/a5njzrfVnnT6s=
   dependencies:
-    "@blueprintjs/core" "^3.9.0"
-    "@blueprintjs/icons" "^3.3.0"
-    "@blueprintjs/select" "^3.3.0"
-    react "~16.8.4"
+    "@lumino/commands" "^1.9.2"
+    "@lumino/coreutils" "^1.4.2"
+    "@lumino/disposable" "^1.3.4"
+    "@lumino/properties" "^1.1.6"
+    "@lumino/signaling" "^1.3.4"
 
-"@phosphor/algorithm@^1.1.3":
-  version "1.1.3"
-  resolved "https://registry.yarnpkg.com/@phosphor/algorithm/-/algorithm-1.1.3.tgz#fb0e974f4e81aadc06f948770b3060c4ec8a1e27"
-  integrity sha512-+dkdYTBglR+qGnLVQdCvYojNZMGxf+xSl1Jeksha3pm7niQktSFz2aR5gEPu/nI5LM8T8slTpqE4Pjvq8P+IVA==
-
-"@phosphor/application@^1.6.3":
-  version "1.6.3"
-  resolved "https://registry.yarnpkg.com/@phosphor/application/-/application-1.6.3.tgz#69f5eab109b54ee06d39443fa2f0ded573c5a080"
-  integrity sha512-UaRR91MWBZwNBGt0ekLVaN98KSwffRE0nsu+UgAmd4s8J28vVCQAPqXx1SjNPnaYVILnXD5whmCA02Ca81bR/A==
+"@jupyterlab/statusbar@^2.0.0-rc.1":
+  version "2.0.0-rc.1"
+  resolved "https://na.artifactory.swg-devops.com:443/artifactory/api/npm/wcp-wdp-npm-virtual/@jupyterlab/statusbar/-/statusbar-2.0.0-rc.1.tgz?dl=https%3A%2F%2Fregistry.npmjs.org%2F%40jupyterlab%2Fstatusbar%2F-%2Fstatusbar-2.0.0-rc.1.tgz#27b43a5f5bb3471ffb695f30a28f1b24ae53d01b"
+  integrity sha1-J7Q6X1uzRx/7aV8woo8bJK5T0Bs=
   dependencies:
-    "@phosphor/commands" "^1.6.3"
-    "@phosphor/coreutils" "^1.3.1"
-    "@phosphor/widgets" "^1.8.0"
+    "@jupyterlab/apputils" "^2.0.0-rc.1"
+    "@jupyterlab/codeeditor" "^2.0.0-rc.1"
+    "@jupyterlab/coreutils" "^4.0.0-rc.1"
+    "@jupyterlab/services" "^5.0.0-rc.1"
+    "@jupyterlab/ui-components" "^2.0.0-rc.2"
+    "@lumino/algorithm" "^1.2.3"
+    "@lumino/coreutils" "^1.4.2"
+    "@lumino/disposable" "^1.3.4"
+    "@lumino/messaging" "^1.3.3"
+    "@lumino/polling" "^1.0.3"
+    "@lumino/signaling" "^1.3.4"
+    "@lumino/widgets" "^1.10.2"
+    react "~16.9.0"
+    typestyle "^2.0.4"
 
-"@phosphor/collections@^1.1.3":
-  version "1.1.3"
-  resolved "https://registry.yarnpkg.com/@phosphor/collections/-/collections-1.1.3.tgz#c938ee4138d97377bba1f0970102071ca3ac1420"
-  integrity sha512-J2U1xd2e5LtqoOJt4kynrjDNeHhVpJjuY2/zA0InS5kyOuWmvy79pt/KJ22n0LBNcU/fjkImqtQmbrC2Z4q2xQ==
+"@jupyterlab/ui-components@^2.0.0-rc.2":
+  version "2.0.0-rc.2"
+  resolved "https://na.artifactory.swg-devops.com:443/artifactory/api/npm/wcp-wdp-npm-virtual/@jupyterlab/ui-components/-/ui-components-2.0.0-rc.2.tgz?dl=https%3A%2F%2Fregistry.npmjs.org%2F%40jupyterlab%2Fui-components%2F-%2Fui-components-2.0.0-rc.2.tgz#ce119e595b90994f51df886e60156cd0c1481e94"
+  integrity sha1-zhGeWVuQmU9R34huYBVs0MFIHpQ=
   dependencies:
-    "@phosphor/algorithm" "^1.1.3"
+    "@blueprintjs/core" "^3.22.2"
+    "@blueprintjs/select" "^3.11.2"
+    "@jupyterlab/coreutils" "^4.0.0-rc.1"
+    "@lumino/coreutils" "^1.4.2"
+    "@lumino/signaling" "^1.3.4"
+    "@lumino/virtualdom" "^1.5.0"
+    "@lumino/widgets" "^1.10.2"
+    react "~16.9.0"
+    react-dom "~16.9.0"
+    typestyle "^2.0.4"
 
-"@phosphor/commands@^1.6.3":
-  version "1.6.3"
-  resolved "https://registry.yarnpkg.com/@phosphor/commands/-/commands-1.6.3.tgz#d5481cc35dab34d0e60b3e04a64df00e1bbaffbd"
-  integrity sha512-PYNHWv6tbXAfAtKiqXuT0OBJvwbJ+RRTV60MBykMF7Vqz9UaZ9n2e/eB2EAGEFccF0PnjTCvBEZgarwwMVi8Hg==
+"@lumino/algorithm@^1.2.3":
+  version "1.2.3"
+  resolved "https://na.artifactory.swg-devops.com:443/artifactory/api/npm/wcp-wdp-npm-virtual/@lumino/algorithm/-/algorithm-1.2.3.tgz?dl=https%3A%2F%2Fregistry.npmjs.org%2F%40lumino%2Falgorithm%2F-%2Falgorithm-1.2.3.tgz&dl=https%3A%2F%2Fna-sl.artifactory.swg-devops.com%3A443%2Fartifactory%2Fapi%2Fnpm%2Ftaas-central-npm-virtual%2F%40lumino%2Falgorithm%2F-%2Falgorithm-1.2.3.tgz%3Fdl%3Dhttps%3A%2F%2Fregistry.npmjs.org%2F%40lumino%2Falgorithm%2F-%2Falgorithm-1.2.3.tgz#4ab9883d7e9a5b1845372a752dcaee2a35a770c6"
+  integrity sha1-SrmIPX6aWxhFNyp1LcruKjWncMY=
+
+"@lumino/application@^1.8.2":
+  version "1.8.4"
+  resolved "https://na.artifactory.swg-devops.com:443/artifactory/api/npm/wcp-wdp-npm-virtual/@lumino/application/-/application-1.8.4.tgz?dl=https%3A%2F%2Fregistry.npmjs.org%2F%40lumino%2Fapplication%2F-%2Fapplication-1.8.4.tgz&dl=https%3A%2F%2Fna-sl.artifactory.swg-devops.com%3A443%2Fartifactory%2Fapi%2Fnpm%2Ftaas-central-npm-virtual%2F%40lumino%2Fapplication%2F-%2Fapplication-1.8.4.tgz%3Fdl%3Dhttps%3A%2F%2Fregistry.npmjs.org%2F%40lumino%2Fapplication%2F-%2Fapplication-1.8.4.tgz#63a26c4ecf8128bf0123739e37922415016f970a"
+  integrity sha1-Y6JsTs+BKL8BI3OeN5IkFQFvlwo=
   dependencies:
-    "@phosphor/algorithm" "^1.1.3"
-    "@phosphor/coreutils" "^1.3.1"
-    "@phosphor/disposable" "^1.2.0"
-    "@phosphor/domutils" "^1.1.3"
-    "@phosphor/keyboard" "^1.1.3"
-    "@phosphor/signaling" "^1.2.3"
+    "@lumino/commands" "^1.10.1"
+    "@lumino/coreutils" "^1.4.2"
+    "@lumino/widgets" "^1.11.1"
 
-"@phosphor/coreutils@^1.3.1":
-  version "1.3.1"
-  resolved "https://registry.yarnpkg.com/@phosphor/coreutils/-/coreutils-1.3.1.tgz#441e34f42340f7faa742a88b2a181947a88d7226"
-  integrity sha512-9OHCn8LYRcPU/sbHm5v7viCA16Uev3gbdkwqoQqlV+EiauDHl70jmeL7XVDXdigl66Dz0LI11C99XOxp+s3zOA==
-
-"@phosphor/disposable@^1.2.0":
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/@phosphor/disposable/-/disposable-1.2.0.tgz#878b9b5863f2026bbf2935eb600c7fdc97d0d026"
-  integrity sha512-4PoWoffdrLyWOW5Qv7I8//owvZmv57YhaxetAMWeJl13ThXc901RprL0Gxhtue2ZxL2PtUjM1207HndKo2FVjA==
+"@lumino/collections@^1.2.3":
+  version "1.2.3"
+  resolved "https://na.artifactory.swg-devops.com:443/artifactory/api/npm/wcp-wdp-npm-virtual/@lumino/collections/-/collections-1.2.3.tgz?dl=https%3A%2F%2Fregistry.npmjs.org%2F%40lumino%2Fcollections%2F-%2Fcollections-1.2.3.tgz&dl=https%3A%2F%2Fna-sl.artifactory.swg-devops.com%3A443%2Fartifactory%2Fapi%2Fnpm%2Ftaas-central-npm-virtual%2F%40lumino%2Fcollections%2F-%2Fcollections-1.2.3.tgz%3Fdl%3Dhttps%3A%2F%2Fregistry.npmjs.org%2F%40lumino%2Fcollections%2F-%2Fcollections-1.2.3.tgz#8cd9578dac3a5ecba68972991fdfd2b94d3339bc"
+  integrity sha1-jNlXjaw6XsumiXKZH9/SuU0zObw=
   dependencies:
-    "@phosphor/algorithm" "^1.1.3"
-    "@phosphor/signaling" "^1.2.3"
+    "@lumino/algorithm" "^1.2.3"
 
-"@phosphor/domutils@^1.1.3":
-  version "1.1.3"
-  resolved "https://registry.yarnpkg.com/@phosphor/domutils/-/domutils-1.1.3.tgz#5aeeaefb4bbfcc7c0942e5287a29d3c7f2b1a2bc"
-  integrity sha512-5CtLAhURQXXHhNXfQydDk/luG1cDVnhlu/qw7gz8/9pht0KXIAmNg/M0LKxx2oJ9+YMNCLVWxAnHAU0yrDpWSA==
+"@lumino/commands@^1.10.1", "@lumino/commands@^1.9.2":
+  version "1.10.1"
+  resolved "https://na.artifactory.swg-devops.com:443/artifactory/api/npm/wcp-wdp-npm-virtual/@lumino/commands/-/commands-1.10.1.tgz?dl=https%3A%2F%2Fregistry.npmjs.org%2F%40lumino%2Fcommands%2F-%2Fcommands-1.10.1.tgz&dl=https%3A%2F%2Fna-sl.artifactory.swg-devops.com%3A443%2Fartifactory%2Fapi%2Fnpm%2Ftaas-central-npm-virtual%2F%40lumino%2Fcommands%2F-%2Fcommands-1.10.1.tgz%3Fdl%3Dhttps%3A%2F%2Fregistry.npmjs.org%2F%40lumino%2Fcommands%2F-%2Fcommands-1.10.1.tgz#149186d23cc48215f9f7f6515321f8871797a444"
+  integrity sha1-FJGG0jzEghX59/ZRUyH4hxeXpEQ=
+  dependencies:
+    "@lumino/algorithm" "^1.2.3"
+    "@lumino/coreutils" "^1.4.2"
+    "@lumino/disposable" "^1.3.5"
+    "@lumino/domutils" "^1.1.7"
+    "@lumino/keyboard" "^1.1.6"
+    "@lumino/signaling" "^1.3.5"
+    "@lumino/virtualdom" "^1.6.1"
 
-"@phosphor/dragdrop@^1.3.3":
+"@lumino/coreutils@^1.4.2":
+  version "1.4.2"
+  resolved "https://na.artifactory.swg-devops.com:443/artifactory/api/npm/wcp-wdp-npm-virtual/@lumino/coreutils/-/coreutils-1.4.2.tgz?dl=https%3A%2F%2Fregistry.npmjs.org%2F%40lumino%2Fcoreutils%2F-%2Fcoreutils-1.4.2.tgz&dl=https%3A%2F%2Fna-sl.artifactory.swg-devops.com%3A443%2Fartifactory%2Fapi%2Fnpm%2Ftaas-central-npm-virtual%2F%40lumino%2Fcoreutils%2F-%2Fcoreutils-1.4.2.tgz%3Fdl%3Dhttps%3A%2F%2Fregistry.npmjs.org%2F%40lumino%2Fcoreutils%2F-%2Fcoreutils-1.4.2.tgz#44cd3d55bb692e876c792f1ecc0df3daa1de63e9"
+  integrity sha1-RM09VbtpLodseS8ezA3z2qHeY+k=
+
+"@lumino/disposable@^1.3.4", "@lumino/disposable@^1.3.5":
+  version "1.3.5"
+  resolved "https://na.artifactory.swg-devops.com:443/artifactory/api/npm/wcp-wdp-npm-virtual/@lumino/disposable/-/disposable-1.3.5.tgz?dl=https%3A%2F%2Fregistry.npmjs.org%2F%40lumino%2Fdisposable%2F-%2Fdisposable-1.3.5.tgz&dl=https%3A%2F%2Fna-sl.artifactory.swg-devops.com%3A443%2Fartifactory%2Fapi%2Fnpm%2Ftaas-central-npm-virtual%2F%40lumino%2Fdisposable%2F-%2Fdisposable-1.3.5.tgz%3Fdl%3Dhttps%3A%2F%2Fregistry.npmjs.org%2F%40lumino%2Fdisposable%2F-%2Fdisposable-1.3.5.tgz#3562ca063117fd2a0735df170f51e41620fa21d0"
+  integrity sha1-NWLKBjEX/SoHNd8XD1HkFiD6IdA=
+  dependencies:
+    "@lumino/algorithm" "^1.2.3"
+    "@lumino/signaling" "^1.3.5"
+
+"@lumino/domutils@^1.1.7":
+  version "1.1.7"
+  resolved "https://na.artifactory.swg-devops.com:443/artifactory/api/npm/wcp-wdp-npm-virtual/@lumino/domutils/-/domutils-1.1.7.tgz?dl=https%3A%2F%2Fregistry.npmjs.org%2F%40lumino%2Fdomutils%2F-%2Fdomutils-1.1.7.tgz&dl=https%3A%2F%2Fna-sl.artifactory.swg-devops.com%3A443%2Fartifactory%2Fapi%2Fnpm%2Ftaas-central-npm-virtual%2F%40lumino%2Fdomutils%2F-%2Fdomutils-1.1.7.tgz%3Fdl%3Dhttps%3A%2F%2Fregistry.npmjs.org%2F%40lumino%2Fdomutils%2F-%2Fdomutils-1.1.7.tgz#9cc16cba0c1e8f31fcb734879dec050505925b16"
+  integrity sha1-nMFsugwejzH8tzSHnewFBQWSWxY=
+
+"@lumino/dragdrop@^1.5.0", "@lumino/dragdrop@^1.5.1":
+  version "1.5.1"
+  resolved "https://na.artifactory.swg-devops.com:443/artifactory/api/npm/wcp-wdp-npm-virtual/@lumino/dragdrop/-/dragdrop-1.5.1.tgz?dl=https%3A%2F%2Fregistry.npmjs.org%2F%40lumino%2Fdragdrop%2F-%2Fdragdrop-1.5.1.tgz&dl=https%3A%2F%2Fna-sl.artifactory.swg-devops.com%3A443%2Fartifactory%2Fapi%2Fnpm%2Ftaas-central-npm-virtual%2F%40lumino%2Fdragdrop%2F-%2Fdragdrop-1.5.1.tgz%3Fdl%3Dhttps%3A%2F%2Fregistry.npmjs.org%2F%40lumino%2Fdragdrop%2F-%2Fdragdrop-1.5.1.tgz#502305183d430693edc112f7c234a3d9f2d89f02"
+  integrity sha1-UCMFGD1DBpPtwRL3wjSj2fLYnwI=
+  dependencies:
+    "@lumino/coreutils" "^1.4.2"
+    "@lumino/disposable" "^1.3.5"
+
+"@lumino/keyboard@^1.1.6":
+  version "1.1.6"
+  resolved "https://na.artifactory.swg-devops.com:443/artifactory/api/npm/wcp-wdp-npm-virtual/@lumino/keyboard/-/keyboard-1.1.6.tgz?dl=https%3A%2F%2Fregistry.npmjs.org%2F%40lumino%2Fkeyboard%2F-%2Fkeyboard-1.1.6.tgz&dl=https%3A%2F%2Fna-sl.artifactory.swg-devops.com%3A443%2Fartifactory%2Fapi%2Fnpm%2Ftaas-central-npm-virtual%2F%40lumino%2Fkeyboard%2F-%2Fkeyboard-1.1.6.tgz%3Fdl%3Dhttps%3A%2F%2Fregistry.npmjs.org%2F%40lumino%2Fkeyboard%2F-%2Fkeyboard-1.1.6.tgz#bf222369bbeacf2c7d2dfe5003d52736c5a2fc3d"
+  integrity sha1-vyIjabvqzyx9Lf5QA9UnNsWi/D0=
+
+"@lumino/messaging@^1.3.3":
   version "1.3.3"
-  resolved "https://registry.yarnpkg.com/@phosphor/dragdrop/-/dragdrop-1.3.3.tgz#9487d27a6eb8cd54bfe6d91eaffc9d0852817b61"
-  integrity sha512-+SrlGsVQwY8OHCWxE/Zvihpk6Rc6bytJDqOUUTZqdL8hvM9QZeopAFioPDxuo1pTj87Um6cR4ekvbTU4KZ/90w==
+  resolved "https://na.artifactory.swg-devops.com:443/artifactory/api/npm/wcp-wdp-npm-virtual/@lumino/messaging/-/messaging-1.3.3.tgz?dl=https%3A%2F%2Fregistry.npmjs.org%2F%40lumino%2Fmessaging%2F-%2Fmessaging-1.3.3.tgz&dl=https%3A%2F%2Fna-sl.artifactory.swg-devops.com%3A443%2Fartifactory%2Fapi%2Fnpm%2Ftaas-central-npm-virtual%2F%40lumino%2Fmessaging%2F-%2Fmessaging-1.3.3.tgz%3Fdl%3Dhttps%3A%2F%2Fregistry.npmjs.org%2F%40lumino%2Fmessaging%2F-%2Fmessaging-1.3.3.tgz#75d3c880b11087da130554eeefa9a19572b24d22"
+  integrity sha1-ddPIgLEQh9oTBVTu76mhlXKyTSI=
   dependencies:
-    "@phosphor/coreutils" "^1.3.1"
-    "@phosphor/disposable" "^1.2.0"
+    "@lumino/algorithm" "^1.2.3"
+    "@lumino/collections" "^1.2.3"
 
-"@phosphor/keyboard@^1.1.3":
-  version "1.1.3"
-  resolved "https://registry.yarnpkg.com/@phosphor/keyboard/-/keyboard-1.1.3.tgz#e5fd13af0479034ef0b5fffcf43ef2d4a266b5b6"
-  integrity sha512-dzxC/PyHiD6mXaESRy6PZTd9JeK+diwG1pyngkyUf127IXOEzubTIbu52VSdpGBklszu33ws05BAGDa4oBE4mQ==
-
-"@phosphor/messaging@^1.2.3":
-  version "1.2.3"
-  resolved "https://registry.yarnpkg.com/@phosphor/messaging/-/messaging-1.2.3.tgz#860423261df8ac6c30344cc036b10b0e83d3c0db"
-  integrity sha512-89Ps4uSRNOEQoepB/0SDoyPpNUWd6VZnmbMetmeXZJHsuJ1GLxtnq3WBdl7UCVNsw3W9NC610pWaDCy/BafRlg==
+"@lumino/polling@^1.0.3":
+  version "1.0.4"
+  resolved "https://na.artifactory.swg-devops.com:443/artifactory/api/npm/wcp-wdp-npm-virtual/@lumino/polling/-/polling-1.0.4.tgz?dl=https%3A%2F%2Fregistry.npmjs.org%2F%40lumino%2Fpolling%2F-%2Fpolling-1.0.4.tgz&dl=https%3A%2F%2Fna-sl.artifactory.swg-devops.com%3A443%2Fartifactory%2Fapi%2Fnpm%2Ftaas-central-npm-virtual%2F%40lumino%2Fpolling%2F-%2Fpolling-1.0.4.tgz%3Fdl%3Dhttps%3A%2F%2Fregistry.npmjs.org%2F%40lumino%2Fpolling%2F-%2Fpolling-1.0.4.tgz#85f956933fa63c47edf808c141cdb9a7a1a49f4c"
+  integrity sha1-hflWkz+mPEft+AjBQc25p6Gkn0w=
   dependencies:
-    "@phosphor/algorithm" "^1.1.3"
-    "@phosphor/collections" "^1.1.3"
+    "@lumino/coreutils" "^1.4.2"
+    "@lumino/disposable" "^1.3.5"
+    "@lumino/signaling" "^1.3.5"
 
-"@phosphor/properties@^1.1.3":
-  version "1.1.3"
-  resolved "https://registry.yarnpkg.com/@phosphor/properties/-/properties-1.1.3.tgz#63e4355be5e22a411c566fd1860207038f171598"
-  integrity sha512-GiglqzU77s6+tFVt6zPq9uuyu/PLQPFcqZt914ZhJ4cN/7yNI/SLyMzpYZ56IRMXvzK9TUgbRna6URE3XAwFUg==
+"@lumino/properties@^1.1.6":
+  version "1.1.6"
+  resolved "https://na.artifactory.swg-devops.com:443/artifactory/api/npm/wcp-wdp-npm-virtual/@lumino/properties/-/properties-1.1.6.tgz?dl=https%3A%2F%2Fregistry.npmjs.org%2F%40lumino%2Fproperties%2F-%2Fproperties-1.1.6.tgz&dl=https%3A%2F%2Fna-sl.artifactory.swg-devops.com%3A443%2Fartifactory%2Fapi%2Fnpm%2Ftaas-central-npm-virtual%2F%40lumino%2Fproperties%2F-%2Fproperties-1.1.6.tgz%3Fdl%3Dhttps%3A%2F%2Fregistry.npmjs.org%2F%40lumino%2Fproperties%2F-%2Fproperties-1.1.6.tgz#367538d63453e99e8c94e5559748a0713d9874ac"
+  integrity sha1-NnU41jRT6Z6MlOVVl0igcT2YdKw=
 
-"@phosphor/signaling@^1.2.3":
-  version "1.2.3"
-  resolved "https://registry.yarnpkg.com/@phosphor/signaling/-/signaling-1.2.3.tgz#2fde0ee810b0fab5f3fc765f81ed08ae671e76f1"
-  integrity sha512-DMwS0m9OgfY5ljpTsklRQPUQpTyg4obz85FyImRDacUVxUVbas95djIDEbU4s1TMzdHBBO+gfki3V4giXUvXzw==
+"@lumino/signaling@^1.3.4", "@lumino/signaling@^1.3.5":
+  version "1.3.5"
+  resolved "https://na.artifactory.swg-devops.com:443/artifactory/api/npm/wcp-wdp-npm-virtual/@lumino/signaling/-/signaling-1.3.5.tgz?dl=https%3A%2F%2Fregistry.npmjs.org%2F%40lumino%2Fsignaling%2F-%2Fsignaling-1.3.5.tgz&dl=https%3A%2F%2Fna-sl.artifactory.swg-devops.com%3A443%2Fartifactory%2Fapi%2Fnpm%2Ftaas-central-npm-virtual%2F%40lumino%2Fsignaling%2F-%2Fsignaling-1.3.5.tgz%3Fdl%3Dhttps%3A%2F%2Fregistry.npmjs.org%2F%40lumino%2Fsignaling%2F-%2Fsignaling-1.3.5.tgz#21d77cf201c429f9824e04c19f0cc04027f963c8"
+  integrity sha1-Idd88gHEKfmCTgTBnwzAQCf5Y8g=
   dependencies:
-    "@phosphor/algorithm" "^1.1.3"
+    "@lumino/algorithm" "^1.2.3"
 
-"@phosphor/virtualdom@^1.1.3":
-  version "1.1.3"
-  resolved "https://registry.yarnpkg.com/@phosphor/virtualdom/-/virtualdom-1.1.3.tgz#33ddebc710ad5bd136fd5f61d7adb4fa14e781e0"
-  integrity sha512-V8PHhhnZCRa5esrC4q5VthqlLtxTo9ZV1mZ6b4YEloapca1S1nggZSQhrSlltXQjtYNUaWJZUZ/BlFD8wFtIEQ==
+"@lumino/virtualdom@^1.5.0", "@lumino/virtualdom@^1.6.1":
+  version "1.6.1"
+  resolved "https://na.artifactory.swg-devops.com:443/artifactory/api/npm/wcp-wdp-npm-virtual/@lumino/virtualdom/-/virtualdom-1.6.1.tgz?dl=https%3A%2F%2Fregistry.npmjs.org%2F%40lumino%2Fvirtualdom%2F-%2Fvirtualdom-1.6.1.tgz&dl=https%3A%2F%2Fna-sl.artifactory.swg-devops.com%3A443%2Fartifactory%2Fapi%2Fnpm%2Ftaas-central-npm-virtual%2F%40lumino%2Fvirtualdom%2F-%2Fvirtualdom-1.6.1.tgz%3Fdl%3Dhttps%3A%2F%2Fregistry.npmjs.org%2F%40lumino%2Fvirtualdom%2F-%2Fvirtualdom-1.6.1.tgz#7f190091e065e7e4e4814836ed5b293aa8359b2d"
+  integrity sha1-fxkAkeBl5+TkgUg27VspOqg1my0=
   dependencies:
-    "@phosphor/algorithm" "^1.1.3"
+    "@lumino/algorithm" "^1.2.3"
 
-"@phosphor/widgets@^1.8.0":
-  version "1.8.0"
-  resolved "https://registry.yarnpkg.com/@phosphor/widgets/-/widgets-1.8.0.tgz#879a28366bc53df9077662eb3178af86ffa3e95e"
-  integrity sha512-Tkjk1bJks9Dtm7lhxTcpA+cSGwdNvRWG5TrolS0waSUiEdgrStWc8QnkMga3zwUZ9Wrz3cLZWnqBfxMjDqwMnA==
+"@lumino/widgets@^1.10.2", "@lumino/widgets@^1.11.1":
+  version "1.11.1"
+  resolved "https://na.artifactory.swg-devops.com:443/artifactory/api/npm/wcp-wdp-npm-virtual/@lumino/widgets/-/widgets-1.11.1.tgz?dl=https%3A%2F%2Fregistry.npmjs.org%2F%40lumino%2Fwidgets%2F-%2Fwidgets-1.11.1.tgz&dl=https%3A%2F%2Fna-sl.artifactory.swg-devops.com%3A443%2Fartifactory%2Fapi%2Fnpm%2Ftaas-central-npm-virtual%2F%40lumino%2Fwidgets%2F-%2Fwidgets-1.11.1.tgz%3Fdl%3Dhttps%3A%2F%2Fregistry.npmjs.org%2F%40lumino%2Fwidgets%2F-%2Fwidgets-1.11.1.tgz#2aba526f1dba7cb004786f25b3bc4a58bd8fe14d"
+  integrity sha1-KrpSbx26fLAEeG8ls7xKWL2P4U0=
   dependencies:
-    "@phosphor/algorithm" "^1.1.3"
-    "@phosphor/commands" "^1.6.3"
-    "@phosphor/coreutils" "^1.3.1"
-    "@phosphor/disposable" "^1.2.0"
-    "@phosphor/domutils" "^1.1.3"
-    "@phosphor/dragdrop" "^1.3.3"
-    "@phosphor/keyboard" "^1.1.3"
-    "@phosphor/messaging" "^1.2.3"
-    "@phosphor/properties" "^1.1.3"
-    "@phosphor/signaling" "^1.2.3"
-    "@phosphor/virtualdom" "^1.1.3"
+    "@lumino/algorithm" "^1.2.3"
+    "@lumino/commands" "^1.10.1"
+    "@lumino/coreutils" "^1.4.2"
+    "@lumino/disposable" "^1.3.5"
+    "@lumino/domutils" "^1.1.7"
+    "@lumino/dragdrop" "^1.5.1"
+    "@lumino/keyboard" "^1.1.6"
+    "@lumino/messaging" "^1.3.3"
+    "@lumino/properties" "^1.1.6"
+    "@lumino/signaling" "^1.3.5"
+    "@lumino/virtualdom" "^1.6.1"
 
 "@samverschueren/stream-to-observable@^0.3.0":
   version "0.3.0"
@@ -514,7 +611,7 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react@*", "@types/react@~16.4.13", "@types/react@~16.8.18":
+"@types/react@*", "@types/react@~16.4.13", "@types/react@~16.9.16":
   version "16.4.18"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-16.4.18.tgz#2e28a2e7f92d3fa7d6a65f2b73275c3e3138a13d"
   integrity sha512-eFzJKEg6pdeaukVLVZ8Xb79CTl/ysX+ExmOfAAqcFlCCK5TgFDD9kWR0S18sglQ3EmM8U+80enjUqbfnUyqpdA==
@@ -530,12 +627,12 @@
     "@types/prop-types" "*"
     csstype "^2.2.0"
 
-ajv@^6.5.5:
-  version "6.10.0"
-  resolved "https://registry.yarnpkg.com/ajv/-/ajv-6.10.0.tgz#90d0d54439da587cd7e843bfb7045f50bd22bdf1"
-  integrity sha512-nffhOpkymDECQyR0mnsUtoCE8RlX38G0rYP+wgLWFyZuUyuuojSSvi/+euOiQBIn63whYwYVIIH1TvE3tu4OEg==
+ajv@^6.10.2:
+  version "6.11.0"
+  resolved "https://na.artifactory.swg-devops.com:443/artifactory/api/npm/wcp-wdp-npm-virtual/ajv/-/ajv-6.11.0.tgz?dl=https%3A%2F%2Fregistry.npmjs.org%2Fajv%2F-%2Fajv-6.11.0.tgz&dl=https%3A%2F%2Fna-sl.artifactory.swg-devops.com%3A443%2Fartifactory%2Fapi%2Fnpm%2Ftaas-central-npm-virtual%2Fajv%2F-%2Fajv-6.11.0.tgz%3Fdl%3Dhttps%3A%2F%2Fregistry.npmjs.org%2Fajv%2F-%2Fajv-6.11.0.tgz#c3607cbc8ae392d8a5a536f25b21f8e5f3f87fe9"
+  integrity sha1-w2B8vIrjktilpTbyWyH45fP4f+k=
   dependencies:
-    fast-deep-equal "^2.0.1"
+    fast-deep-equal "^3.1.1"
     fast-json-stable-stringify "^2.0.0"
     json-schema-traverse "^0.4.1"
     uri-js "^4.2.2"
@@ -616,20 +713,10 @@ arrify@^1.0.1:
   resolved "https://registry.yarnpkg.com/arrify/-/arrify-1.0.1.tgz#898508da2226f380df904728456849c1501a4b0d"
   integrity sha1-iYUI2iIm84DfkEcoRWhJwVAaSw0=
 
-asap@~2.0.3:
-  version "2.0.6"
-  resolved "https://registry.yarnpkg.com/asap/-/asap-2.0.6.tgz#e50347611d7e690943208bbdafebcbc2fb866d46"
-  integrity sha1-5QNHYR1+aQlDIIu9r+vLwvuGbUY=
-
 assign-symbols@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/assign-symbols/-/assign-symbols-1.0.0.tgz#59667f41fadd4f20ccbc2bb96b8d4f7f78ec0367"
   integrity sha1-WWZ/QfrdTyDMvCu5a41Pf3jsA2c=
-
-async-limiter@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/async-limiter/-/async-limiter-1.0.0.tgz#78faed8c3d074ab81f22b4e985d79e8738f720f8"
-  integrity sha512-jp/uFnooOiO+L211eZOoSyzpOITMXx1rBITauYykG3BRYPu8h0UcxsPNB04RR5vo4Tyz3+ay17tR6JVf9qzYWg==
 
 atob@^2.1.1:
   version "2.1.2"
@@ -777,10 +864,10 @@ code-point-at@^1.0.0:
   resolved "https://registry.yarnpkg.com/code-point-at/-/code-point-at-1.1.0.tgz#0d070b4d043a5bea33a2f1a40e2edb3d9a4ccf77"
   integrity sha1-DQcLTQQ6W+ozovGkDi7bPZpMz3c=
 
-codemirror@~5.47.0:
-  version "5.47.0"
-  resolved "https://registry.yarnpkg.com/codemirror/-/codemirror-5.47.0.tgz#c13a521ae5660d3acc655af252f4955065293789"
-  integrity sha512-kV49Fr+NGFHFc/Imsx6g180hSlkGhuHxTSDDmDHOuyln0MQYFLixDY4+bFkBVeCEiepYfDimAF/e++9jPJk4QA==
+codemirror@~5.49.2:
+  version "5.49.2"
+  resolved "https://na.artifactory.swg-devops.com:443/artifactory/api/npm/wcp-wdp-npm-virtual/codemirror/-/codemirror-5.49.2.tgz?dl=https%3A%2F%2Fregistry.npmjs.org%2Fcodemirror%2F-%2Fcodemirror-5.49.2.tgz&dl=https%3A%2F%2Fna-sl.artifactory.swg-devops.com%3A443%2Fartifactory%2Fapi%2Fnpm%2Ftaas-central-npm-virtual%2Fcodemirror%2F-%2Fcodemirror-5.49.2.tgz%3Fdl%3Dhttps%3A%2F%2Fregistry.npmjs.org%2Fcodemirror%2F-%2Fcodemirror-5.49.2.tgz#c84fdaf11b19803f828b0c67060c7bc6d154ccad"
+  integrity sha1-yE/a8RsZgD+CiwxnBgx7xtFUzK0=
 
 collection-visit@^1.0.0:
   version "1.0.0"
@@ -822,11 +909,6 @@ copy-descriptor@^0.1.0:
   resolved "https://registry.yarnpkg.com/copy-descriptor/-/copy-descriptor-0.1.1.tgz#676f6eb3c39997c2ee1ac3a924fd6124748f578d"
   integrity sha1-Z29us8OZl8LuGsOpJP1hJHSPV40=
 
-core-js@^1.0.0:
-  version "1.2.7"
-  resolved "https://registry.yarnpkg.com/core-js/-/core-js-1.2.7.tgz#652294c14651db28fa93bd2d5ff2983a4f08c636"
-  integrity sha1-ZSKUwUZR2yj6k70tX/KYOk8IxjY=
-
 cosmiconfig@^5.2.0:
   version "5.2.1"
   resolved "https://registry.yarnpkg.com/cosmiconfig/-/cosmiconfig-5.2.1.tgz#040f726809c591e77a17c0a3626ca45b4f168b1a"
@@ -837,13 +919,13 @@ cosmiconfig@^5.2.0:
     js-yaml "^3.13.1"
     parse-json "^4.0.0"
 
-create-react-context@<=0.2.2:
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/create-react-context/-/create-react-context-0.2.2.tgz#9836542f9aaa22868cd7d4a6f82667df38019dca"
-  integrity sha512-KkpaLARMhsTsgp0d2NA/R94F/eDLbhXERdIq3LvX2biCAXcDvHYoOqHfWCHf1+OLj+HKBotLG3KqaOOf+C1C+A==
+create-react-context@^0.3.0:
+  version "0.3.0"
+  resolved "https://na.artifactory.swg-devops.com:443/artifactory/api/npm/wcp-wdp-npm-virtual/create-react-context/-/create-react-context-0.3.0.tgz?dl=https%3A%2F%2Fregistry.npmjs.org%2Fcreate-react-context%2F-%2Fcreate-react-context-0.3.0.tgz&dl=https%3A%2F%2Fna-sl.artifactory.swg-devops.com%3A443%2Fartifactory%2Fapi%2Fnpm%2Ftaas-central-npm-virtual%2Fcreate-react-context%2F-%2Fcreate-react-context-0.3.0.tgz%3Fdl%3Dhttps%3A%2F%2Fregistry.npmjs.org%2Fcreate-react-context%2F-%2Fcreate-react-context-0.3.0.tgz#546dede9dc422def0d3fc2fe03afe0bc0f4f7d8c"
+  integrity sha1-VG3t6dxCLe8NP8L+A6/gvA9PfYw=
   dependencies:
-    fbjs "^0.8.0"
     gud "^1.0.0"
+    warning "^4.0.3"
 
 cross-spawn@^6.0.0:
   version "6.0.5"
@@ -896,6 +978,25 @@ dedent@^0.7.0:
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/dedent/-/dedent-0.7.0.tgz#2495ddbaf6eb874abb0e1be9df22d2e5a544326c"
   integrity sha1-JJXduvbrh0q7Dhvp3yLS5aVEMmw=
+
+deep-equal@^1.1.1:
+  version "1.1.1"
+  resolved "https://na.artifactory.swg-devops.com:443/artifactory/api/npm/wcp-wdp-npm-virtual/deep-equal/-/deep-equal-1.1.1.tgz?dl=https%3A%2F%2Fregistry.npmjs.org%2Fdeep-equal%2F-%2Fdeep-equal-1.1.1.tgz&dl=https%3A%2F%2Fna-sl.artifactory.swg-devops.com%3A443%2Fartifactory%2Fapi%2Fnpm%2Ftaas-central-npm-virtual%2Fdeep-equal%2F-%2Fdeep-equal-1.1.1.tgz%3Fdl%3Dhttps%3A%2F%2Fregistry.npmjs.org%2Fdeep-equal%2F-%2Fdeep-equal-1.1.1.tgz#b5c98c942ceffaf7cb051e24e1434a25a2e6076a"
+  integrity sha1-tcmMlCzv+vfLBR4k4UNKJaLmB2o=
+  dependencies:
+    is-arguments "^1.0.4"
+    is-date-object "^1.0.1"
+    is-regex "^1.0.4"
+    object-is "^1.0.1"
+    object-keys "^1.1.1"
+    regexp.prototype.flags "^1.2.0"
+
+define-properties@^1.1.2, define-properties@^1.1.3:
+  version "1.1.3"
+  resolved "https://na.artifactory.swg-devops.com:443/artifactory/api/npm/wcp-wdp-npm-virtual/define-properties/-/define-properties-1.1.3.tgz?dl=https%3A%2F%2Fregistry.npmjs.org%2Fdefine-properties%2F-%2Fdefine-properties-1.1.3.tgz&dl=https%3A%2F%2Fna-sl.artifactory.swg-devops.com%3A443%2Fartifactory%2Fapi%2Fnpm%2Ftaas-central-npm-virtual%2Fdefine-properties%2F-%2Fdefine-properties-1.1.3.tgz%3Fdl%3Dhttps%3A%2F%2Fregistry.npmjs.org%2Fdefine-properties%2F-%2Fdefine-properties-1.1.3.tgz#cf88da6cbee26fe6db7094f61d870cbd84cee9f1"
+  integrity sha1-z4jabL7ib+bbcJT2HYcMvYTO6fE=
+  dependencies:
+    object-keys "^1.0.12"
 
 define-property@^0.2.5:
   version "0.2.5"
@@ -951,10 +1052,10 @@ dom-serializer@0:
     domelementtype "^1.3.0"
     entities "^1.1.1"
 
-dom4@^2.0.1:
+dom4@^2.1.5:
   version "2.1.5"
-  resolved "https://registry.yarnpkg.com/dom4/-/dom4-2.1.5.tgz#f98a94eb67b340f0fa5b42b0ee9c38cda035428e"
-  integrity sha512-gJbnVGq5zaBUY0lUh0LUEVGYrtN75Ks8ZwpwOYvnVFrKy/qzXK4R/1WuLIFExWj/tBxbRAkTzZUGJHXmqsBNjQ==
+  resolved "https://na.artifactory.swg-devops.com:443/artifactory/api/npm/wcp-wdp-npm-virtual/dom4/-/dom4-2.1.5.tgz?dl=https%3A%2F%2Fregistry.npmjs.org%2Fdom4%2F-%2Fdom4-2.1.5.tgz&dl=https%3A%2F%2Fna-sl.artifactory.swg-devops.com%3A443%2Fartifactory%2Fapi%2Fnpm%2Ftaas-central-npm-virtual%2Fdom4%2F-%2Fdom4-2.1.5.tgz%3Fdl%3Dhttps%3A%2F%2Fregistry.npmjs.org%2Fdom4%2F-%2Fdom4-2.1.5.tgz#f98a94eb67b340f0fa5b42b0ee9c38cda035428e"
+  integrity sha1-+YqU62ezQPD6W0Kw7pw4zaA1Qo4=
 
 domelementtype@1, domelementtype@^1.3.0, domelementtype@^1.3.1:
   version "1.3.1"
@@ -981,13 +1082,6 @@ elegant-spinner@^1.0.1:
   resolved "https://registry.yarnpkg.com/elegant-spinner/-/elegant-spinner-1.0.1.tgz#db043521c95d7e303fd8f345bedc3349cfb0729e"
   integrity sha1-2wQ1IcldfjA/2PNFvtwzSc+wcp4=
 
-encoding@^0.1.11:
-  version "0.1.12"
-  resolved "https://registry.yarnpkg.com/encoding/-/encoding-0.1.12.tgz#538b66f3ee62cd1ab51ec323829d1f9480c74beb"
-  integrity sha1-U4tm8+5izRq1HsMjgp0flIDHS+s=
-  dependencies:
-    iconv-lite "~0.4.13"
-
 end-of-stream@^1.1.0:
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/end-of-stream/-/end-of-stream-1.4.1.tgz#ed29634d19baba463b6ce6b80a37213eab71ec43"
@@ -1006,6 +1100,32 @@ error-ex@^1.3.1:
   integrity sha512-7dFHNmqeFSEt2ZBsCriorKnn3Z2pj+fd9kmI6QoWw4//DL+icEBfc0U7qJCisqrTsKTjw4fNFy2pW9OqStD84g==
   dependencies:
     is-arrayish "^0.2.1"
+
+es-abstract@^1.17.0-next.1:
+  version "1.17.4"
+  resolved "https://na.artifactory.swg-devops.com:443/artifactory/api/npm/wcp-wdp-npm-virtual/es-abstract/-/es-abstract-1.17.4.tgz?dl=https%3A%2F%2Fregistry.npmjs.org%2Fes-abstract%2F-%2Fes-abstract-1.17.4.tgz&dl=https%3A%2F%2Fna-sl.artifactory.swg-devops.com%3A443%2Fartifactory%2Fapi%2Fnpm%2Ftaas-central-npm-virtual%2Fes-abstract%2F-%2Fes-abstract-1.17.4.tgz%3Fdl%3Dhttps%3A%2F%2Fregistry.npmjs.org%2Fes-abstract%2F-%2Fes-abstract-1.17.4.tgz#e3aedf19706b20e7c2594c35fc0d57605a79e184"
+  integrity sha1-467fGXBrIOfCWUw1/A1XYFp54YQ=
+  dependencies:
+    es-to-primitive "^1.2.1"
+    function-bind "^1.1.1"
+    has "^1.0.3"
+    has-symbols "^1.0.1"
+    is-callable "^1.1.5"
+    is-regex "^1.0.5"
+    object-inspect "^1.7.0"
+    object-keys "^1.1.1"
+    object.assign "^4.1.0"
+    string.prototype.trimleft "^2.1.1"
+    string.prototype.trimright "^2.1.1"
+
+es-to-primitive@^1.2.1:
+  version "1.2.1"
+  resolved "https://na.artifactory.swg-devops.com:443/artifactory/api/npm/wcp-wdp-npm-virtual/es-to-primitive/-/es-to-primitive-1.2.1.tgz?dl=https%3A%2F%2Fregistry.npmjs.org%2Fes-to-primitive%2F-%2Fes-to-primitive-1.2.1.tgz&dl=https%3A%2F%2Fna-sl.artifactory.swg-devops.com%3A443%2Fartifactory%2Fapi%2Fnpm%2Ftaas-central-npm-virtual%2Fes-to-primitive%2F-%2Fes-to-primitive-1.2.1.tgz%3Fdl%3Dhttps%3A%2F%2Fregistry.npmjs.org%2Fes-to-primitive%2F-%2Fes-to-primitive-1.2.1.tgz#e55cd4c9cdc188bcefb03b366c736323fc5c898a"
+  integrity sha1-5VzUyc3BiLzvsDs2bHNjI/xciYo=
+  dependencies:
+    is-callable "^1.1.4"
+    is-date-object "^1.0.1"
+    is-symbol "^1.0.2"
 
 escape-string-regexp@^1.0.2, escape-string-regexp@^1.0.4, escape-string-regexp@^1.0.5:
   version "1.0.5"
@@ -1085,10 +1205,10 @@ extglob@^2.0.4:
     snapdragon "^0.8.1"
     to-regex "^3.0.1"
 
-fast-deep-equal@^2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/fast-deep-equal/-/fast-deep-equal-2.0.1.tgz#7b05218ddf9667bf7f370bf7fdb2cb15fdd0aa49"
-  integrity sha1-ewUhjd+WZ79/Nwv3/bLLFf3Qqkk=
+fast-deep-equal@^3.1.1:
+  version "3.1.1"
+  resolved "https://na.artifactory.swg-devops.com:443/artifactory/api/npm/wcp-wdp-npm-virtual/fast-deep-equal/-/fast-deep-equal-3.1.1.tgz?dl=https%3A%2F%2Fregistry.npmjs.org%2Ffast-deep-equal%2F-%2Ffast-deep-equal-3.1.1.tgz&dl=https%3A%2F%2Fna-sl.artifactory.swg-devops.com%3A443%2Fartifactory%2Fapi%2Fnpm%2Ftaas-central-npm-virtual%2Ffast-deep-equal%2F-%2Ffast-deep-equal-3.1.1.tgz%3Fdl%3Dhttps%3A%2F%2Fregistry.npmjs.org%2Ffast-deep-equal%2F-%2Ffast-deep-equal-3.1.1.tgz#545145077c501491e33b15ec408c294376e94ae4"
+  integrity sha1-VFFFB3xQFJHjOxXsQIwpQ3bpSuQ=
 
 fast-diff@^1.1.1:
   version "1.2.0"
@@ -1099,19 +1219,6 @@ fast-json-stable-stringify@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/fast-json-stable-stringify/-/fast-json-stable-stringify-2.0.0.tgz#d5142c0caee6b1189f87d3a76111064f86c8bbf2"
   integrity sha1-1RQsDK7msRifh9OnYREGT4bIu/I=
-
-fbjs@^0.8.0:
-  version "0.8.17"
-  resolved "https://registry.yarnpkg.com/fbjs/-/fbjs-0.8.17.tgz#c4d598ead6949112653d6588b01a5cdcd9f90fdd"
-  integrity sha1-xNWY6taUkRJlPWWIsBpc3Nn5D90=
-  dependencies:
-    core-js "^1.0.0"
-    isomorphic-fetch "^2.1.1"
-    loose-envify "^1.0.0"
-    object-assign "^4.1.0"
-    promise "^7.1.1"
-    setimmediate "^1.0.5"
-    ua-parser-js "^0.7.18"
 
 figures@^1.7.0:
   version "1.7.0"
@@ -1158,11 +1265,6 @@ fn-name@~2.0.1:
   resolved "https://registry.yarnpkg.com/fn-name/-/fn-name-2.0.1.tgz#5214d7537a4d06a4a301c0cc262feb84188002e7"
   integrity sha1-UhTXU3pNBqSjAcDMJi/rhBiAAuc=
 
-font-awesome@~4.7.0:
-  version "4.7.0"
-  resolved "https://registry.yarnpkg.com/font-awesome/-/font-awesome-4.7.0.tgz#8fa8cf0411a1a31afd07b06d2902bb9fc815a133"
-  integrity sha1-j6jPBBGhoxr9B7BtKQK7n8gVoTM=
-
 for-in@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/for-in/-/for-in-1.0.2.tgz#81068d295a8142ec0ac726c6e2200c30fb6d5e80"
@@ -1175,15 +1277,20 @@ fragment-cache@^0.2.1:
   dependencies:
     map-cache "^0.2.2"
 
-free-style@2.5.1:
-  version "2.5.1"
-  resolved "https://registry.yarnpkg.com/free-style/-/free-style-2.5.1.tgz#5e3f684c470d3bba7e4dbb43524e0a08917e873c"
-  integrity sha512-X7dtUSTrlS1KRQBtiQ618NWIRDdRgD91IeajKCSh0fgTqArSixv+n3ea6F/OSvrvg14tPLR+yCq2s+O602+pRw==
+free-style@2.6.1:
+  version "2.6.1"
+  resolved "https://na.artifactory.swg-devops.com:443/artifactory/api/npm/wcp-wdp-npm-virtual/free-style/-/free-style-2.6.1.tgz?dl=https%3A%2F%2Fregistry.npmjs.org%2Ffree-style%2F-%2Ffree-style-2.6.1.tgz&dl=https%3A%2F%2Fna-sl.artifactory.swg-devops.com%3A443%2Fartifactory%2Fapi%2Fnpm%2Ftaas-central-npm-virtual%2Ffree-style%2F-%2Ffree-style-2.6.1.tgz%3Fdl%3Dhttps%3A%2F%2Fregistry.npmjs.org%2Ffree-style%2F-%2Ffree-style-2.6.1.tgz#6af512568291195854842cbbaacd95578a6a9a8b"
+  integrity sha1-avUSVoKRGVhUhCy7qs2VV4pqmos=
 
 fs.realpath@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/fs.realpath/-/fs.realpath-1.0.0.tgz#1504ad2523158caa40db4a2787cb01411994ea4f"
   integrity sha1-FQStJSMVjKpA20onh8sBQRmU6k8=
+
+function-bind@^1.1.1:
+  version "1.1.1"
+  resolved "https://na.artifactory.swg-devops.com:443/artifactory/api/npm/wcp-wdp-npm-virtual/function-bind/-/function-bind-1.1.1.tgz?dl=https%3A%2F%2Fregistry.npmjs.org%2Ffunction-bind%2F-%2Ffunction-bind-1.1.1.tgz&dl=https%3A%2F%2Fna-sl.artifactory.swg-devops.com%3A443%2Fartifactory%2Fapi%2Fnpm%2Ftaas-central-npm-virtual%2Ffunction-bind%2F-%2Ffunction-bind-1.1.1.tgz%3Fdl%3Dhttps%3A%2F%2Fregistry.npmjs.org%2Ffunction-bind%2F-%2Ffunction-bind-1.1.1.tgz#a56899d3ea3c9bab874bb9773b7c5ede92f4895d"
+  integrity sha1-pWiZ0+o8m6uHS7l3O3xe3pL0iV0=
 
 g-status@^2.0.2:
   version "2.0.2"
@@ -1256,6 +1363,11 @@ has-flag@^3.0.0:
   resolved "https://registry.yarnpkg.com/has-flag/-/has-flag-3.0.0.tgz#b5d454dc2199ae225699f3467e5a07f3b955bafd"
   integrity sha1-tdRU3CGZriJWmfNGfloH87lVuv0=
 
+has-symbols@^1.0.0, has-symbols@^1.0.1:
+  version "1.0.1"
+  resolved "https://na.artifactory.swg-devops.com:443/artifactory/api/npm/wcp-wdp-npm-virtual/has-symbols/-/has-symbols-1.0.1.tgz?dl=https%3A%2F%2Fregistry.npmjs.org%2Fhas-symbols%2F-%2Fhas-symbols-1.0.1.tgz&dl=https%3A%2F%2Fna-sl.artifactory.swg-devops.com%3A443%2Fartifactory%2Fapi%2Fnpm%2Ftaas-central-npm-virtual%2Fhas-symbols%2F-%2Fhas-symbols-1.0.1.tgz%3Fdl%3Dhttps%3A%2F%2Fregistry.npmjs.org%2Fhas-symbols%2F-%2Fhas-symbols-1.0.1.tgz#9f5214758a44196c406d9bd76cebf81ec2dd31e8"
+  integrity sha1-n1IUdYpEGWxAbZvXbOv4HsLdMeg=
+
 has-value@^0.3.1:
   version "0.3.1"
   resolved "https://registry.yarnpkg.com/has-value/-/has-value-0.3.1.tgz#7b1f58bada62ca827ec0a2078025654845995e1f"
@@ -1286,6 +1398,13 @@ has-values@^1.0.0:
   dependencies:
     is-number "^3.0.0"
     kind-of "^4.0.0"
+
+has@^1.0.3:
+  version "1.0.3"
+  resolved "https://na.artifactory.swg-devops.com:443/artifactory/api/npm/wcp-wdp-npm-virtual/has/-/has-1.0.3.tgz?dl=https%3A%2F%2Fregistry.npmjs.org%2Fhas%2F-%2Fhas-1.0.3.tgz&dl=https%3A%2F%2Fna-sl.artifactory.swg-devops.com%3A443%2Fartifactory%2Fapi%2Fnpm%2Ftaas-central-npm-virtual%2Fhas%2F-%2Fhas-1.0.3.tgz%3Fdl%3Dhttps%3A%2F%2Fregistry.npmjs.org%2Fhas%2F-%2Fhas-1.0.3.tgz#722d7cbfc1f6aa8241f16dd814e011e1f41e8796"
+  integrity sha1-ci18v8H2qoJB8W3YFOAR4fQeh5Y=
+  dependencies:
+    function-bind "^1.1.1"
 
 hosted-git-info@^2.1.4:
   version "2.7.1"
@@ -1319,13 +1438,6 @@ husky@^2.4.1:
     read-pkg "^5.1.1"
     run-node "^1.0.0"
     slash "^3.0.0"
-
-iconv-lite@~0.4.13:
-  version "0.4.24"
-  resolved "https://registry.yarnpkg.com/iconv-lite/-/iconv-lite-0.4.24.tgz#2022b4b25fbddc21d2f524974a474aafe733908b"
-  integrity sha512-v3MXnZAcvnywkTUEZomIActle7RXXeedOR31wwl7VlyoXO4Qi9arvSenNQWne1TcRwhCL1HwLI21bEqdpj8/rA==
-  dependencies:
-    safer-buffer ">= 2.1.2 < 3"
 
 import-fresh@^2.0.0:
   version "2.0.0"
@@ -1367,6 +1479,11 @@ is-accessor-descriptor@^1.0.0:
   dependencies:
     kind-of "^6.0.0"
 
+is-arguments@^1.0.4:
+  version "1.0.4"
+  resolved "https://na.artifactory.swg-devops.com:443/artifactory/api/npm/wcp-wdp-npm-virtual/is-arguments/-/is-arguments-1.0.4.tgz?dl=https%3A%2F%2Fregistry.npmjs.org%2Fis-arguments%2F-%2Fis-arguments-1.0.4.tgz&dl=https%3A%2F%2Fna-sl.artifactory.swg-devops.com%3A443%2Fartifactory%2Fapi%2Fnpm%2Ftaas-central-npm-virtual%2Fis-arguments%2F-%2Fis-arguments-1.0.4.tgz%3Fdl%3Dhttps%3A%2F%2Fregistry.npmjs.org%2Fis-arguments%2F-%2Fis-arguments-1.0.4.tgz#3faf966c7cba0ff437fb31f6250082fcf0448cf3"
+  integrity sha1-P6+WbHy6D/Q3+zH2JQCC/PBEjPM=
+
 is-arrayish@^0.2.1:
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/is-arrayish/-/is-arrayish-0.2.1.tgz#77c99840527aa8ecb1a8ba697b80645a7a926a9d"
@@ -1376,6 +1493,11 @@ is-buffer@^1.1.5:
   version "1.1.6"
   resolved "https://registry.yarnpkg.com/is-buffer/-/is-buffer-1.1.6.tgz#efaa2ea9daa0d7ab2ea13a97b2b8ad51fefbe8be"
   integrity sha512-NcdALwpXkTm5Zvvbk7owOUSvVvBKDgKP5/ewfXEznmQFfs4ZRmanOeKBTjRVjka3QFoN6XJ+9F3USqfHqTaU5w==
+
+is-callable@^1.1.4, is-callable@^1.1.5:
+  version "1.1.5"
+  resolved "https://na.artifactory.swg-devops.com:443/artifactory/api/npm/wcp-wdp-npm-virtual/is-callable/-/is-callable-1.1.5.tgz?dl=https%3A%2F%2Fregistry.npmjs.org%2Fis-callable%2F-%2Fis-callable-1.1.5.tgz&dl=https%3A%2F%2Fna-sl.artifactory.swg-devops.com%3A443%2Fartifactory%2Fapi%2Fnpm%2Ftaas-central-npm-virtual%2Fis-callable%2F-%2Fis-callable-1.1.5.tgz%3Fdl%3Dhttps%3A%2F%2Fregistry.npmjs.org%2Fis-callable%2F-%2Fis-callable-1.1.5.tgz#f7e46b596890456db74e7f6e976cb3273d06faab"
+  integrity sha1-9+RrWWiQRW23Tn9ul2yzJz0G+qs=
 
 is-ci@^2.0.0:
   version "2.0.0"
@@ -1397,6 +1519,11 @@ is-data-descriptor@^1.0.0:
   integrity sha512-jbRXy1FmtAoCjQkVmIVYwuuqDFUbaOeDjmed1tOGPrsMhtJA4rD9tkgA0F1qJ3gRFRXcHYVkdeaP50Q5rE/jLQ==
   dependencies:
     kind-of "^6.0.0"
+
+is-date-object@^1.0.1:
+  version "1.0.2"
+  resolved "https://na.artifactory.swg-devops.com:443/artifactory/api/npm/wcp-wdp-npm-virtual/is-date-object/-/is-date-object-1.0.2.tgz?dl=https%3A%2F%2Fregistry.npmjs.org%2Fis-date-object%2F-%2Fis-date-object-1.0.2.tgz&dl=https%3A%2F%2Fna-sl.artifactory.swg-devops.com%3A443%2Fartifactory%2Fapi%2Fnpm%2Ftaas-central-npm-virtual%2Fis-date-object%2F-%2Fis-date-object-1.0.2.tgz%3Fdl%3Dhttps%3A%2F%2Fregistry.npmjs.org%2Fis-date-object%2F-%2Fis-date-object-1.0.2.tgz#bda736f2cd8fd06d32844e7743bfa7494c3bfd7e"
+  integrity sha1-vac28s2P0G0yhE53Q7+nSUw7/X4=
 
 is-descriptor@^0.1.0:
   version "0.1.6"
@@ -1507,15 +1634,29 @@ is-promise@^2.1.0:
   resolved "https://registry.yarnpkg.com/is-promise/-/is-promise-2.1.0.tgz#79a2a9ece7f096e80f36d2b2f3bc16c1ff4bf3fa"
   integrity sha1-eaKp7OfwlugPNtKy87wWwf9L8/o=
 
+is-regex@^1.0.4, is-regex@^1.0.5:
+  version "1.0.5"
+  resolved "https://na.artifactory.swg-devops.com:443/artifactory/api/npm/wcp-wdp-npm-virtual/is-regex/-/is-regex-1.0.5.tgz?dl=https%3A%2F%2Fregistry.npmjs.org%2Fis-regex%2F-%2Fis-regex-1.0.5.tgz&dl=https%3A%2F%2Fna-sl.artifactory.swg-devops.com%3A443%2Fartifactory%2Fapi%2Fnpm%2Ftaas-central-npm-virtual%2Fis-regex%2F-%2Fis-regex-1.0.5.tgz%3Fdl%3Dhttps%3A%2F%2Fregistry.npmjs.org%2Fis-regex%2F-%2Fis-regex-1.0.5.tgz#39d589a358bf18967f726967120b8fc1aed74eae"
+  integrity sha1-OdWJo1i/GJZ/cmlnEguPwa7XTq4=
+  dependencies:
+    has "^1.0.3"
+
 is-regexp@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/is-regexp/-/is-regexp-1.0.0.tgz#fd2d883545c46bac5a633e7b9a09e87fa2cb5069"
   integrity sha1-/S2INUXEa6xaYz57mgnof6LLUGk=
 
-is-stream@^1.0.1, is-stream@^1.1.0:
+is-stream@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/is-stream/-/is-stream-1.1.0.tgz#12d4a3dd4e68e0b79ceb8dbc84173ae80d91ca44"
   integrity sha1-EtSj3U5o4Lec6428hBc66A2RykQ=
+
+is-symbol@^1.0.2:
+  version "1.0.3"
+  resolved "https://na.artifactory.swg-devops.com:443/artifactory/api/npm/wcp-wdp-npm-virtual/is-symbol/-/is-symbol-1.0.3.tgz?dl=https%3A%2F%2Fregistry.npmjs.org%2Fis-symbol%2F-%2Fis-symbol-1.0.3.tgz&dl=https%3A%2F%2Fna-sl.artifactory.swg-devops.com%3A443%2Fartifactory%2Fapi%2Fnpm%2Ftaas-central-npm-virtual%2Fis-symbol%2F-%2Fis-symbol-1.0.3.tgz%3Fdl%3Dhttps%3A%2F%2Fregistry.npmjs.org%2Fis-symbol%2F-%2Fis-symbol-1.0.3.tgz#38e1014b9e6329be0de9d24a414fd7441ec61937"
+  integrity sha1-OOEBS55jKb4N6dJKQU/XRB7GGTc=
+  dependencies:
+    has-symbols "^1.0.1"
 
 is-windows@^1.0.2:
   version "1.0.2"
@@ -1543,14 +1684,6 @@ isobject@^3.0.0, isobject@^3.0.1:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/isobject/-/isobject-3.0.1.tgz#4e431e92b11a9731636aa1f9c8d1ccbcfdab78df"
   integrity sha1-TkMekrEalzFjaqH5yNHMvP2reN8=
-
-isomorphic-fetch@^2.1.1:
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/isomorphic-fetch/-/isomorphic-fetch-2.2.1.tgz#611ae1acf14f5e81f729507472819fe9733558a9"
-  integrity sha1-YRrhrPFPXoH3KVB0coGf6XM1WKk=
-  dependencies:
-    node-fetch "^1.0.1"
-    whatwg-fetch ">=0.10.0"
 
 jest-docblock@^21.0.0:
   version "21.2.0"
@@ -1580,10 +1713,10 @@ json-schema-traverse@^0.4.1:
   resolved "https://registry.yarnpkg.com/json-schema-traverse/-/json-schema-traverse-0.4.1.tgz#69f6a87d9513ab8bb8fe63bdb0979c448e684660"
   integrity sha512-xbbCH5dCYU5T8LcEhhuh7HJ88HXuW3qsI3Y0zOZFKfZEHcpWiHU/Jxzk629Brsab/mMiHQti9wMP+845RPe3Vg==
 
-json5@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/json5/-/json5-2.1.0.tgz#e7a0c62c48285c628d20a10b85c89bb807c32850"
-  integrity sha512-8Mh9h6xViijj36g7Dxi+Y4S6hNGV96vcJZr/SrlHh1LR/pEn/8j/+qIBbs44YKl69Lrfctp4QD+AdWLTMqEZAQ==
+json5@^2.1.1:
+  version "2.1.1"
+  resolved "https://na.artifactory.swg-devops.com:443/artifactory/api/npm/wcp-wdp-npm-virtual/json5/-/json5-2.1.1.tgz?dl=https%3A%2F%2Fregistry.npmjs.org%2Fjson5%2F-%2Fjson5-2.1.1.tgz&dl=https%3A%2F%2Fna-sl.artifactory.swg-devops.com%3A443%2Fartifactory%2Fapi%2Fnpm%2Ftaas-central-npm-virtual%2Fjson5%2F-%2Fjson5-2.1.1.tgz%3Fdl%3Dhttps%3A%2F%2Fregistry.npmjs.org%2Fjson5%2F-%2Fjson5-2.1.1.tgz#81b6cb04e9ba496f1c7005d07b4368a2638f90b6"
+  integrity sha1-gbbLBOm6SW8ccAXQe0NoomOPkLY=
   dependencies:
     minimist "^1.2.0"
 
@@ -1782,10 +1915,10 @@ map-visit@^1.0.0:
   dependencies:
     object-visit "^1.0.0"
 
-marked@0.6.2:
-  version "0.6.2"
-  resolved "https://registry.yarnpkg.com/marked/-/marked-0.6.2.tgz#c574be8b545a8b48641456ca1dbe0e37b6dccc1a"
-  integrity sha512-LqxwVH3P/rqKX4EKGz7+c2G9r98WeM/SW34ybhgNGhUQNKtf1GmmSkJ6cDGJ/t6tiyae49qRkpyTw2B9HOrgUA==
+marked@^0.8.0:
+  version "0.8.0"
+  resolved "https://na.artifactory.swg-devops.com:443/artifactory/api/npm/wcp-wdp-npm-virtual/marked/-/marked-0.8.0.tgz?dl=https%3A%2F%2Fregistry.npmjs.org%2Fmarked%2F-%2Fmarked-0.8.0.tgz&dl=https%3A%2F%2Fna-sl.artifactory.swg-devops.com%3A443%2Fartifactory%2Fapi%2Fnpm%2Ftaas-central-npm-virtual%2Fmarked%2F-%2Fmarked-0.8.0.tgz%3Fdl%3Dhttps%3A%2F%2Fregistry.npmjs.org%2Fmarked%2F-%2Fmarked-0.8.0.tgz#ec5c0c9b93878dc52dd54be8d0e524097bd81a99"
+  integrity sha1-7FwMm5OHjcUt1Uvo0OUkCXvYGpk=
 
 matcher@^1.0.0:
   version "1.1.1"
@@ -1887,14 +2020,6 @@ nice-try@^1.0.4:
   resolved "https://registry.yarnpkg.com/nice-try/-/nice-try-1.0.5.tgz#a3378a7696ce7d223e88fc9b764bd7ef1089e366"
   integrity sha512-1nh45deeb5olNY7eX82BkPO7SSxR5SSYJiPTrTdFUVYwAl8CKMA5N9PjTYkHiRjisVcxcQ1HXdLhx2qxxJzLNQ==
 
-node-fetch@^1.0.1:
-  version "1.7.3"
-  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-1.7.3.tgz#980f6f72d85211a5347c6b2bc18c5b84c3eb47ef"
-  integrity sha512-NhZ4CsKx7cYm2vSrBAr2PvFOe6sWDf0UYLRqA6svUYg7+/TSfVAu49jYC4BvQ4Sms9SZgdqGBgroqfDhJdTyKQ==
-  dependencies:
-    encoding "^0.1.11"
-    is-stream "^1.0.1"
-
 node-fetch@^2.6.0:
   version "2.6.0"
   resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.0.tgz#e633456386d4aa55863f676a7ab0daa8fdecb0fd"
@@ -1910,10 +2035,10 @@ normalize-package-data@^2.5.0:
     semver "2 || 3 || 4 || 5"
     validate-npm-package-license "^3.0.1"
 
-normalize.css@^8.0.0:
+normalize.css@^8.0.1:
   version "8.0.1"
-  resolved "https://registry.yarnpkg.com/normalize.css/-/normalize.css-8.0.1.tgz#9b98a208738b9cc2634caacbc42d131c97487bf3"
-  integrity sha512-qizSNPO93t1YUuUhP22btGOo3chcvDFqFaj2TRybP0DMxkHOCTYwp3n34fel4a31ORXy4m1Xq0Gyqpb5m33qIg==
+  resolved "https://na.artifactory.swg-devops.com:443/artifactory/api/npm/wcp-wdp-npm-virtual/normalize.css/-/normalize.css-8.0.1.tgz?dl=https%3A%2F%2Fregistry.npmjs.org%2Fnormalize.css%2F-%2Fnormalize.css-8.0.1.tgz&dl=https%3A%2F%2Fna-sl.artifactory.swg-devops.com%3A443%2Fartifactory%2Fapi%2Fnpm%2Ftaas-central-npm-virtual%2Fnormalize.css%2F-%2Fnormalize.css-8.0.1.tgz%3Fdl%3Dhttps%3A%2F%2Fregistry.npmjs.org%2Fnormalize.css%2F-%2Fnormalize.css-8.0.1.tgz#9b98a208738b9cc2634caacbc42d131c97487bf3"
+  integrity sha1-m5iiCHOLnMJjTKrLxC0THJdIe/M=
 
 npm-path@^2.0.2:
   version "2.0.4"
@@ -1957,12 +2082,37 @@ object-copy@^0.1.0:
     define-property "^0.2.5"
     kind-of "^3.0.3"
 
+object-inspect@^1.7.0:
+  version "1.7.0"
+  resolved "https://na.artifactory.swg-devops.com:443/artifactory/api/npm/wcp-wdp-npm-virtual/object-inspect/-/object-inspect-1.7.0.tgz?dl=https%3A%2F%2Fregistry.npmjs.org%2Fobject-inspect%2F-%2Fobject-inspect-1.7.0.tgz&dl=https%3A%2F%2Fna-sl.artifactory.swg-devops.com%3A443%2Fartifactory%2Fapi%2Fnpm%2Ftaas-central-npm-virtual%2Fobject-inspect%2F-%2Fobject-inspect-1.7.0.tgz%3Fdl%3Dhttps%3A%2F%2Fregistry.npmjs.org%2Fobject-inspect%2F-%2Fobject-inspect-1.7.0.tgz#f4f6bd181ad77f006b5ece60bd0b6f398ff74a67"
+  integrity sha1-9Pa9GBrXfwBrXs5gvQtvOY/3Smc=
+
+object-is@^1.0.1:
+  version "1.0.2"
+  resolved "https://na.artifactory.swg-devops.com:443/artifactory/api/npm/wcp-wdp-npm-virtual/object-is/-/object-is-1.0.2.tgz?dl=https%3A%2F%2Fregistry.npmjs.org%2Fobject-is%2F-%2Fobject-is-1.0.2.tgz&dl=https%3A%2F%2Fna-sl.artifactory.swg-devops.com%3A443%2Fartifactory%2Fapi%2Fnpm%2Ftaas-central-npm-virtual%2Fobject-is%2F-%2Fobject-is-1.0.2.tgz%3Fdl%3Dhttps%3A%2F%2Fregistry.npmjs.org%2Fobject-is%2F-%2Fobject-is-1.0.2.tgz#6b80eb84fe451498f65007982f035a5b445edec4"
+  integrity sha1-a4DrhP5FFJj2UAeYLwNaW0Re3sQ=
+
+object-keys@^1.0.11, object-keys@^1.0.12, object-keys@^1.1.1:
+  version "1.1.1"
+  resolved "https://na.artifactory.swg-devops.com:443/artifactory/api/npm/wcp-wdp-npm-virtual/object-keys/-/object-keys-1.1.1.tgz?dl=https%3A%2F%2Fregistry.npmjs.org%2Fobject-keys%2F-%2Fobject-keys-1.1.1.tgz&dl=https%3A%2F%2Fna-sl.artifactory.swg-devops.com%3A443%2Fartifactory%2Fapi%2Fnpm%2Ftaas-central-npm-virtual%2Fobject-keys%2F-%2Fobject-keys-1.1.1.tgz%3Fdl%3Dhttps%3A%2F%2Fregistry.npmjs.org%2Fobject-keys%2F-%2Fobject-keys-1.1.1.tgz#1c47f272df277f3b1daf061677d9c82e2322c60e"
+  integrity sha1-HEfyct8nfzsdrwYWd9nILiMixg4=
+
 object-visit@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/object-visit/-/object-visit-1.0.1.tgz#f79c4493af0c5377b59fe39d395e41042dd045bb"
   integrity sha1-95xEk68MU3e1n+OdOV5BBC3QRbs=
   dependencies:
     isobject "^3.0.0"
+
+object.assign@^4.1.0:
+  version "4.1.0"
+  resolved "https://na.artifactory.swg-devops.com:443/artifactory/api/npm/wcp-wdp-npm-virtual/object.assign/-/object.assign-4.1.0.tgz?dl=https%3A%2F%2Fregistry.npmjs.org%2Fobject.assign%2F-%2Fobject.assign-4.1.0.tgz&dl=https%3A%2F%2Fna-sl.artifactory.swg-devops.com%3A443%2Fartifactory%2Fapi%2Fnpm%2Ftaas-central-npm-virtual%2Fobject.assign%2F-%2Fobject.assign-4.1.0.tgz%3Fdl%3Dhttps%3A%2F%2Fregistry.npmjs.org%2Fobject.assign%2F-%2Fobject.assign-4.1.0.tgz#968bf1100d7956bb3ca086f006f846b3bc4008da"
+  integrity sha1-lovxEA15Vrs8oIbwBvhGs7xACNo=
+  dependencies:
+    define-properties "^1.1.2"
+    function-bind "^1.1.1"
+    has-symbols "^1.0.0"
+    object-keys "^1.0.11"
 
 object.pick@^1.3.0:
   version "1.3.0"
@@ -2110,10 +2260,15 @@ please-upgrade-node@^3.0.2, please-upgrade-node@^3.1.1:
   dependencies:
     semver-compare "^1.0.0"
 
-popper.js@^1.14.1, popper.js@^1.14.4:
+popper.js@^1.14.4:
   version "1.15.0"
   resolved "https://registry.yarnpkg.com/popper.js/-/popper.js-1.15.0.tgz#5560b99bbad7647e9faa475c6b8056621f5a4ff2"
   integrity sha512-w010cY1oCUmI+9KwwlWki+r5jxKfTFDVoadl7MSrIujHU5MJ5OR6HTDj6Xo8aoR/QsA56x8jKjA59qGH4ELtrA==
+
+popper.js@^1.15.0:
+  version "1.16.1"
+  resolved "https://na.artifactory.swg-devops.com:443/artifactory/api/npm/wcp-wdp-npm-virtual/popper.js/-/popper.js-1.16.1.tgz?dl=https%3A%2F%2Fregistry.npmjs.org%2Fpopper.js%2F-%2Fpopper.js-1.16.1.tgz&dl=https%3A%2F%2Fna-sl.artifactory.swg-devops.com%3A443%2Fartifactory%2Fapi%2Fnpm%2Ftaas-central-npm-virtual%2Fpopper.js%2F-%2Fpopper.js-1.16.1.tgz%3Fdl%3Dhttps%3A%2F%2Fregistry.npmjs.org%2Fpopper.js%2F-%2Fpopper.js-1.16.1.tgz#2a223cb3dc7b6213d740e40372be40de43e65b1b"
+  integrity sha1-KiI8s9x7YhPXQOQDcr5A3kPmWxs=
 
 posix-character-classes@^0.1.0:
   version "0.1.1"
@@ -2133,13 +2288,6 @@ prettier@^1.18.2:
   version "1.18.2"
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.18.2.tgz#6823e7c5900017b4bd3acf46fe9ac4b4d7bda9ea"
   integrity sha512-OeHeMc0JhFE9idD4ZdtNibzY0+TPHSpSSb9h8FqtP+YnoZZ1sl8Vc9b1sasjfymH3SonAF4QcA2+mzHPhMvIiw==
-
-promise@^7.1.1:
-  version "7.3.1"
-  resolved "https://registry.yarnpkg.com/promise/-/promise-7.3.1.tgz#064b72602b18f90f29192b8b1bc418ffd1ebd3bf"
-  integrity sha512-nolQXZ/4L+bP/UGlkfaIujX9BKxGwmQ9OT4mOt5yvy8iK1h3wqTEJCijzGANTCCl9nWjY41juyAn2K3Q1hLLTg==
-  dependencies:
-    asap "~2.0.3"
 
 prop-types@^15.6.1, prop-types@^15.6.2:
   version "15.7.2"
@@ -2173,7 +2321,7 @@ querystringify@^2.1.1:
   resolved "https://registry.yarnpkg.com/querystringify/-/querystringify-2.1.1.tgz#60e5a5fd64a7f8bfa4d2ab2ed6fdf4c85bad154e"
   integrity sha512-w7fLxIRCRT7U8Qu53jQnJyPkYZIaR4n5151KMfcJlO/A9397Wxb1amJvROTK6TOnp7PfoAmg/qXiNHI+08jRfA==
 
-react-dom@^16.8.6, react-dom@~16.8.4:
+react-dom@^16.8.6:
   version "16.8.6"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.8.6.tgz#71d6303f631e8b0097f56165ef608f051ff6e10f"
   integrity sha512-1nL7PIq9LTL3fthPqwkvr2zY7phIPjYrT0jp4HjyEQrEROnw4dG41VVwi/wfoCneoleqrNX7iAD+pXebJZwrwA==
@@ -2182,6 +2330,16 @@ react-dom@^16.8.6, react-dom@~16.8.4:
     object-assign "^4.1.1"
     prop-types "^15.6.2"
     scheduler "^0.13.6"
+
+react-dom@~16.9.0:
+  version "16.9.0"
+  resolved "https://na.artifactory.swg-devops.com:443/artifactory/api/npm/wcp-wdp-npm-virtual/react-dom/-/react-dom-16.9.0.tgz?dl=https%3A%2F%2Fregistry.npmjs.org%2Freact-dom%2F-%2Freact-dom-16.9.0.tgz&dl=https%3A%2F%2Fna-sl.artifactory.swg-devops.com%3A443%2Fartifactory%2Fapi%2Fnpm%2Ftaas-central-npm-virtual%2Freact-dom%2F-%2Freact-dom-16.9.0.tgz%3Fdl%3Dhttps%3A%2F%2Fregistry.npmjs.org%2Freact-dom%2F-%2Freact-dom-16.9.0.tgz#5e65527a5e26f22ae3701131bcccaee9fb0d3962"
+  integrity sha1-XmVSel4m8irjcBExvMyu6fsNOWI=
+  dependencies:
+    loose-envify "^1.1.0"
+    object-assign "^4.1.1"
+    prop-types "^15.6.2"
+    scheduler "^0.15.0"
 
 react-is@^16.8.1:
   version "16.8.6"
@@ -2193,29 +2351,30 @@ react-lifecycles-compat@^3.0.4:
   resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
   integrity sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==
 
-react-popper@^1.0.0:
-  version "1.3.3"
-  resolved "https://registry.yarnpkg.com/react-popper/-/react-popper-1.3.3.tgz#2c6cef7515a991256b4f0536cd4bdcb58a7b6af6"
-  integrity sha512-ynMZBPkXONPc5K4P5yFWgZx5JGAUIP3pGGLNs58cfAPgK67olx7fmLp+AdpZ0+GoQ+ieFDa/z4cdV6u7sioH6w==
+react-popper@^1.3.7:
+  version "1.3.7"
+  resolved "https://na.artifactory.swg-devops.com:443/artifactory/api/npm/wcp-wdp-npm-virtual/react-popper/-/react-popper-1.3.7.tgz?dl=https%3A%2F%2Fregistry.npmjs.org%2Freact-popper%2F-%2Freact-popper-1.3.7.tgz&dl=https%3A%2F%2Fna-sl.artifactory.swg-devops.com%3A443%2Fartifactory%2Fapi%2Fnpm%2Ftaas-central-npm-virtual%2Freact-popper%2F-%2Freact-popper-1.3.7.tgz%3Fdl%3Dhttps%3A%2F%2Fregistry.npmjs.org%2Freact-popper%2F-%2Freact-popper-1.3.7.tgz#f6a3471362ef1f0d10a4963673789de1baca2324"
+  integrity sha1-9qNHE2LvHw0QpJY2c3id4brKIyQ=
   dependencies:
     "@babel/runtime" "^7.1.2"
-    create-react-context "<=0.2.2"
+    create-react-context "^0.3.0"
+    deep-equal "^1.1.1"
     popper.js "^1.14.4"
     prop-types "^15.6.1"
     typed-styles "^0.0.7"
     warning "^4.0.2"
 
-react-transition-group@^2.2.1:
+react-transition-group@^2.9.0:
   version "2.9.0"
-  resolved "https://registry.yarnpkg.com/react-transition-group/-/react-transition-group-2.9.0.tgz#df9cdb025796211151a436c69a8f3b97b5b07c8d"
-  integrity sha512-+HzNTCHpeQyl4MJ/bdE0u6XRMe9+XG/+aL4mCxVN4DnPBQ0/5bfHWPDuOZUzYdMj94daZaZdCCc1Dzt9R/xSSg==
+  resolved "https://na.artifactory.swg-devops.com:443/artifactory/api/npm/wcp-wdp-npm-virtual/react-transition-group/-/react-transition-group-2.9.0.tgz?dl=https%3A%2F%2Fregistry.npmjs.org%2Freact-transition-group%2F-%2Freact-transition-group-2.9.0.tgz&dl=https%3A%2F%2Fna-sl.artifactory.swg-devops.com%3A443%2Fartifactory%2Fapi%2Fnpm%2Ftaas-central-npm-virtual%2Freact-transition-group%2F-%2Freact-transition-group-2.9.0.tgz%3Fdl%3Dhttps%3A%2F%2Fregistry.npmjs.org%2Freact-transition-group%2F-%2Freact-transition-group-2.9.0.tgz#df9cdb025796211151a436c69a8f3b97b5b07c8d"
+  integrity sha1-35zbAleWIRFRpDbGmo87l7WwfI0=
   dependencies:
     dom-helpers "^3.4.0"
     loose-envify "^1.4.0"
     prop-types "^15.6.2"
     react-lifecycles-compat "^3.0.4"
 
-react@^16.8.6, react@~16.8.4:
+react@^16.8.6:
   version "16.8.6"
   resolved "https://registry.yarnpkg.com/react/-/react-16.8.6.tgz#ad6c3a9614fd3a4e9ef51117f54d888da01f2bbe"
   integrity sha512-pC0uMkhLaHm11ZSJULfOBqV4tIZkx87ZLvbbQYunNixAAvjnC+snJCg0XQXn9VIsttVsbZP/H/ewzgsd5fxKXw==
@@ -2224,6 +2383,15 @@ react@^16.8.6, react@~16.8.4:
     object-assign "^4.1.1"
     prop-types "^15.6.2"
     scheduler "^0.13.6"
+
+react@~16.9.0:
+  version "16.9.0"
+  resolved "https://na.artifactory.swg-devops.com:443/artifactory/api/npm/wcp-wdp-npm-virtual/react/-/react-16.9.0.tgz?dl=https%3A%2F%2Fregistry.npmjs.org%2Freact%2F-%2Freact-16.9.0.tgz&dl=https%3A%2F%2Fna-sl.artifactory.swg-devops.com%3A443%2Fartifactory%2Fapi%2Fnpm%2Ftaas-central-npm-virtual%2Freact%2F-%2Freact-16.9.0.tgz%3Fdl%3Dhttps%3A%2F%2Fregistry.npmjs.org%2Freact%2F-%2Freact-16.9.0.tgz#40ba2f9af13bc1a38d75dbf2f4359a5185c4f7aa"
+  integrity sha1-QLovmvE7waONddvy9DWaUYXE96o=
+  dependencies:
+    loose-envify "^1.1.0"
+    object-assign "^4.1.1"
+    prop-types "^15.6.2"
 
 read-pkg@^5.1.1:
   version "5.1.1"
@@ -2257,6 +2425,14 @@ regex-not@^1.0.0, regex-not@^1.0.2:
     extend-shallow "^3.0.2"
     safe-regex "^1.1.0"
 
+regexp.prototype.flags@^1.2.0:
+  version "1.3.0"
+  resolved "https://na.artifactory.swg-devops.com:443/artifactory/api/npm/wcp-wdp-npm-virtual/regexp.prototype.flags/-/regexp.prototype.flags-1.3.0.tgz?dl=https%3A%2F%2Fregistry.npmjs.org%2Fregexp.prototype.flags%2F-%2Fregexp.prototype.flags-1.3.0.tgz&dl=https%3A%2F%2Fna-sl.artifactory.swg-devops.com%3A443%2Fartifactory%2Fapi%2Fnpm%2Ftaas-central-npm-virtual%2Fregexp.prototype.flags%2F-%2Fregexp.prototype.flags-1.3.0.tgz%3Fdl%3Dhttps%3A%2F%2Fregistry.npmjs.org%2Fregexp.prototype.flags%2F-%2Fregexp.prototype.flags-1.3.0.tgz#7aba89b3c13a64509dabcf3ca8d9fbb9bdf5cb75"
+  integrity sha1-erqJs8E6ZFCdq888qNn7ub31y3U=
+  dependencies:
+    define-properties "^1.1.3"
+    es-abstract "^1.17.0-next.1"
+
 repeat-element@^1.1.2:
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/repeat-element/-/repeat-element-1.1.3.tgz#782e0d825c0c5a3bb39731f84efee6b742e6b1ce"
@@ -2272,10 +2448,10 @@ requires-port@^1.0.0:
   resolved "https://registry.yarnpkg.com/requires-port/-/requires-port-1.0.0.tgz#925d2601d39ac485e091cf0da5c6e694dc3dcaff"
   integrity sha1-kl0mAdOaxIXgkc8NpcbmlNw9yv8=
 
-resize-observer-polyfill@^1.5.0:
+resize-observer-polyfill@^1.5.1:
   version "1.5.1"
-  resolved "https://registry.yarnpkg.com/resize-observer-polyfill/-/resize-observer-polyfill-1.5.1.tgz#0e9020dd3d21024458d4ebd27e23e40269810464"
-  integrity sha512-LwZrotdHOo12nQuZlHEmtuXdqGoOD0OhaxopaNFxWzInpEgaLWoVuAMbTzixuosCx2nEG58ngzW3vxdWoxIgdg==
+  resolved "https://na.artifactory.swg-devops.com:443/artifactory/api/npm/wcp-wdp-npm-virtual/resize-observer-polyfill/-/resize-observer-polyfill-1.5.1.tgz?dl=https%3A%2F%2Fregistry.npmjs.org%2Fresize-observer-polyfill%2F-%2Fresize-observer-polyfill-1.5.1.tgz&dl=https%3A%2F%2Fna-sl.artifactory.swg-devops.com%3A443%2Fartifactory%2Fapi%2Fnpm%2Ftaas-central-npm-virtual%2Fresize-observer-polyfill%2F-%2Fresize-observer-polyfill-1.5.1.tgz%3Fdl%3Dhttps%3A%2F%2Fregistry.npmjs.org%2Fresize-observer-polyfill%2F-%2Fresize-observer-polyfill-1.5.1.tgz#0e9020dd3d21024458d4ebd27e23e40269810464"
+  integrity sha1-DpAg3T0hAkRY1OvSfiPkAmmBBGQ=
 
 resolve-from@^3.0.0:
   version "3.0.0"
@@ -2338,11 +2514,6 @@ safe-regex@^1.1.0:
   dependencies:
     ret "~0.1.10"
 
-"safer-buffer@>= 2.1.2 < 3":
-  version "2.1.2"
-  resolved "https://registry.yarnpkg.com/safer-buffer/-/safer-buffer-2.1.2.tgz#44fa161b0187b9549dd84bb91802f9bd8385cd6a"
-  integrity sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==
-
 sanitize-html@~1.20.1:
   version "1.20.1"
   resolved "https://registry.yarnpkg.com/sanitize-html/-/sanitize-html-1.20.1.tgz#f6effdf55dd398807171215a62bfc21811bacf85"
@@ -2363,6 +2534,14 @@ scheduler@^0.13.6:
   version "0.13.6"
   resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.13.6.tgz#466a4ec332467b31a91b9bf74e5347072e4cd889"
   integrity sha512-IWnObHt413ucAYKsD9J1QShUKkbKLQQHdxRyw73sw4FN26iWr3DY/H34xGPe4nmL1DwXyWmSWmMrA9TfQbE/XQ==
+  dependencies:
+    loose-envify "^1.1.0"
+    object-assign "^4.1.1"
+
+scheduler@^0.15.0:
+  version "0.15.0"
+  resolved "https://na.artifactory.swg-devops.com:443/artifactory/api/npm/wcp-wdp-npm-virtual/scheduler/-/scheduler-0.15.0.tgz?dl=https%3A%2F%2Fregistry.npmjs.org%2Fscheduler%2F-%2Fscheduler-0.15.0.tgz#6bfcf80ff850b280fed4aeecc6513bc0b4f17f8e"
+  integrity sha1-a/z4D/hQsoD+1K7sxlE7wLTxf44=
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
@@ -2396,11 +2575,6 @@ set-value@^2.0.0:
     is-extendable "^0.1.1"
     is-plain-object "^2.0.3"
     split-string "^3.0.1"
-
-setimmediate@^1.0.5:
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/setimmediate/-/setimmediate-1.0.5.tgz#290cbb232e306942d7d7ea9b83732ab7856f8285"
-  integrity sha1-KQy7Iy4waULX1+qbg3Mqt4VvgoU=
 
 shebang-command@^1.2.0:
   version "1.2.0"
@@ -2573,6 +2747,22 @@ string-width@^2.1.1:
     is-fullwidth-code-point "^2.0.0"
     strip-ansi "^4.0.0"
 
+string.prototype.trimleft@^2.1.1:
+  version "2.1.1"
+  resolved "https://na.artifactory.swg-devops.com:443/artifactory/api/npm/wcp-wdp-npm-virtual/string.prototype.trimleft/-/string.prototype.trimleft-2.1.1.tgz?dl=https%3A%2F%2Fregistry.npmjs.org%2Fstring.prototype.trimleft%2F-%2Fstring.prototype.trimleft-2.1.1.tgz&dl=https%3A%2F%2Fna-sl.artifactory.swg-devops.com%3A443%2Fartifactory%2Fapi%2Fnpm%2Ftaas-central-npm-virtual%2Fstring.prototype.trimleft%2F-%2Fstring.prototype.trimleft-2.1.1.tgz%3Fdl%3Dhttps%3A%2F%2Fregistry.npmjs.org%2Fstring.prototype.trimleft%2F-%2Fstring.prototype.trimleft-2.1.1.tgz#9bdb8ac6abd6d602b17a4ed321870d2f8dcefc74"
+  integrity sha1-m9uKxqvW1gKxek7TIYcNL43O/HQ=
+  dependencies:
+    define-properties "^1.1.3"
+    function-bind "^1.1.1"
+
+string.prototype.trimright@^2.1.1:
+  version "2.1.1"
+  resolved "https://na.artifactory.swg-devops.com:443/artifactory/api/npm/wcp-wdp-npm-virtual/string.prototype.trimright/-/string.prototype.trimright-2.1.1.tgz?dl=https%3A%2F%2Fregistry.npmjs.org%2Fstring.prototype.trimright%2F-%2Fstring.prototype.trimright-2.1.1.tgz&dl=https%3A%2F%2Fna-sl.artifactory.swg-devops.com%3A443%2Fartifactory%2Fapi%2Fnpm%2Ftaas-central-npm-virtual%2Fstring.prototype.trimright%2F-%2Fstring.prototype.trimright-2.1.1.tgz%3Fdl%3Dhttps%3A%2F%2Fregistry.npmjs.org%2Fstring.prototype.trimright%2F-%2Fstring.prototype.trimright-2.1.1.tgz#440314b15996c866ce8a0341894d45186200c5d9"
+  integrity sha1-RAMUsVmWyGbOigNBiU1FGGIAxdk=
+  dependencies:
+    define-properties "^1.1.3"
+    function-bind "^1.1.1"
+
 string_decoder@^1.1.1:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/string_decoder/-/string_decoder-1.2.0.tgz#fe86e738b19544afe70469243b2a1ee9240eae8d"
@@ -2672,6 +2862,11 @@ tslib@^1.7.1, tslib@^1.8.0, tslib@^1.8.1, tslib@^1.9.0:
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.10.0.tgz#c3c19f95973fb0a62973fb09d90d961ee43e5c8a"
   integrity sha512-qOebF53frne81cf0S9B41ByenJ3/IuH8yJKngAX35CmiZySA0khhkovshKK+jGCaMnVomla7gVlIcc3EvKPbTQ==
 
+tslib@~1.9.0:
+  version "1.9.3"
+  resolved "https://na.artifactory.swg-devops.com:443/artifactory/api/npm/wcp-wdp-npm-virtual/tslib/-/tslib-1.9.3.tgz?dl=https%3A%2F%2Fregistry.npmjs.org%2Ftslib%2F-%2Ftslib-1.9.3.tgz#d7e4dd79245d85428c4d7e4822a79917954ca286"
+  integrity sha1-1+TdeSRdhUKMTX5IIqeZF5VMooY=
+
 tslint-config-prettier@^1.18.0:
   version "1.18.0"
   resolved "https://registry.yarnpkg.com/tslint-config-prettier/-/tslint-config-prettier-1.18.0.tgz#75f140bde947d35d8f0d238e0ebf809d64592c37"
@@ -2727,18 +2922,13 @@ typescript@^3.5.2:
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.5.2.tgz#a09e1dc69bc9551cadf17dba10ee42cf55e5d56c"
   integrity sha512-7KxJovlYhTX5RaRbUdkAXN1KUZ8PwWlTzQdHV6xNqvuFOs7+WBo10TQUqT19Q/Jz2hk5v9TQDIhyLhhJY4p5AA==
 
-typestyle@^2.0.1:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/typestyle/-/typestyle-2.0.2.tgz#e22f24f5d7e8506aa36b1fd3606824ac16291104"
-  integrity sha512-2nKRvMFE12MYudRu0UxYryZw3vbSOnZyuZiGTblYKIEi/U+VaH/hThv69AWCu89V7qc9uqrcQme1GCXmObomuQ==
+typestyle@^2.0.4:
+  version "2.0.4"
+  resolved "https://na.artifactory.swg-devops.com:443/artifactory/api/npm/wcp-wdp-npm-virtual/typestyle/-/typestyle-2.0.4.tgz?dl=https%3A%2F%2Fregistry.npmjs.org%2Ftypestyle%2F-%2Ftypestyle-2.0.4.tgz&dl=https%3A%2F%2Fna-sl.artifactory.swg-devops.com%3A443%2Fartifactory%2Fapi%2Fnpm%2Ftaas-central-npm-virtual%2Ftypestyle%2F-%2Ftypestyle-2.0.4.tgz%3Fdl%3Dhttps%3A%2F%2Fregistry.npmjs.org%2Ftypestyle%2F-%2Ftypestyle-2.0.4.tgz#b8da5feaf8a4f9d1f69066f3cc4659098bd08457"
+  integrity sha1-uNpf6vik+dH2kGbzzEZZCYvQhFc=
   dependencies:
     csstype "^2.4.0"
-    free-style "2.5.1"
-
-ua-parser-js@^0.7.18:
-  version "0.7.20"
-  resolved "https://registry.yarnpkg.com/ua-parser-js/-/ua-parser-js-0.7.20.tgz#7527178b82f6a62a0f243d1f94fd30e3e3c21098"
-  integrity sha512-8OaIKfzL5cpx8eCMAhhvTlft8GYF8b2eQr6JkCyVdrgjcytyOmPCXrqXFcUnhonRpLlh5yxEZVohm6mzaowUOw==
+    free-style "2.6.1"
 
 union-value@^1.0.0:
   version "1.0.0"
@@ -2770,10 +2960,10 @@ urix@^0.1.0:
   resolved "https://registry.yarnpkg.com/urix/-/urix-0.1.0.tgz#da937f7a62e21fec1fd18d49b35c2935067a6c72"
   integrity sha1-2pN/emLiH+wf0Y1Js1wpNQZ6bHI=
 
-url-parse@~1.4.3:
+url-parse@~1.4.7:
   version "1.4.7"
-  resolved "https://registry.yarnpkg.com/url-parse/-/url-parse-1.4.7.tgz#a8a83535e8c00a316e403a5db4ac1b9b853ae278"
-  integrity sha512-d3uaVyzDB9tQoSXFvuSUNFibTd9zxd2bkVrDRvF5TmvWWQwqE4lgYJ5m+x1DbecWkw+LK4RNl2CU1hHuOKPVlg==
+  resolved "https://na.artifactory.swg-devops.com:443/artifactory/api/npm/wcp-wdp-npm-virtual/url-parse/-/url-parse-1.4.7.tgz?dl=https%3A%2F%2Fregistry.npmjs.org%2Furl-parse%2F-%2Furl-parse-1.4.7.tgz&dl=https%3A%2F%2Fna-sl.artifactory.swg-devops.com%3A443%2Fartifactory%2Fapi%2Fnpm%2Ftaas-central-npm-virtual%2Furl-parse%2F-%2Furl-parse-1.4.7.tgz%3Fdl%3Dhttps%3A%2F%2Fregistry.npmjs.org%2Furl-parse%2F-%2Furl-parse-1.4.7.tgz#a8a83535e8c00a316e403a5db4ac1b9b853ae278"
+  integrity sha1-qKg1NejACjFuQDpdtKwbm4U64ng=
   dependencies:
     querystringify "^2.1.1"
     requires-port "^1.0.0"
@@ -2796,17 +2986,12 @@ validate-npm-package-license@^3.0.1:
     spdx-correct "^3.0.0"
     spdx-expression-parse "^3.0.0"
 
-warning@^4.0.2:
+warning@^4.0.2, warning@^4.0.3:
   version "4.0.3"
   resolved "https://registry.yarnpkg.com/warning/-/warning-4.0.3.tgz#16e9e077eb8a86d6af7d64aa1e05fd85b4678ca3"
   integrity sha512-rpJyN222KWIvHJ/F53XSZv0Zl/accqHR8et1kpaMTD/fLCRxtV8iX8czMzY7sVZupTI3zcUTg8eycS2kNF9l6w==
   dependencies:
     loose-envify "^1.0.0"
-
-whatwg-fetch@>=0.10.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/whatwg-fetch/-/whatwg-fetch-3.0.0.tgz#fc804e458cc460009b1a2b966bc8817d2578aefb"
-  integrity sha512-9GSJUgz1D4MfyKU7KRqwOjXCXTqWdFNvEr7eUBYchQiVc744mqK/MzXPNR2WsPkmkOa4ywfg8C2n8h+13Bey1Q==
 
 which@^1.2.10, which@^1.2.9:
   version "1.3.1"
@@ -2828,12 +3013,10 @@ wrappy@1:
   resolved "https://registry.yarnpkg.com/wrappy/-/wrappy-1.0.2.tgz#b5243d8f3ec1aa35f1364605bc0d1036e30ab69f"
   integrity sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8=
 
-ws@^7.0.0:
-  version "7.0.1"
-  resolved "https://registry.yarnpkg.com/ws/-/ws-7.0.1.tgz#1a04e86cc3a57c03783f4910fdb090cf31b8e165"
-  integrity sha512-ILHfMbuqLJvnSgYXLgy4kMntroJpe8hT41dOVWM8bxRuw6TK4mgMp9VJUNsZTEc5Bh+Mbs0DJT4M0N+wBG9l9A==
-  dependencies:
-    async-limiter "^1.0.0"
+ws@^7.2.0:
+  version "7.2.1"
+  resolved "https://na.artifactory.swg-devops.com:443/artifactory/api/npm/wcp-wdp-npm-virtual/ws/-/ws-7.2.1.tgz?dl=https%3A%2F%2Fregistry.npmjs.org%2Fws%2F-%2Fws-7.2.1.tgz&dl=https%3A%2F%2Fna-sl.artifactory.swg-devops.com%3A443%2Fartifactory%2Fapi%2Fnpm%2Ftaas-central-npm-virtual%2Fws%2F-%2Fws-7.2.1.tgz%3Fdl%3Dhttps%3A%2F%2Fregistry.npmjs.org%2Fws%2F-%2Fws-7.2.1.tgz#03ed52423cd744084b2cf42ed197c8b65a936b8e"
+  integrity sha1-A+1SQjzXRAhLLPQu0ZfItlqTa44=
 
 xtend@^4.0.1:
   version "4.0.1"
