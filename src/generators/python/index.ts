@@ -22,18 +22,18 @@ function generate(editor: IDocumentWidget<FileEditor>): IHeading[] {
   let headings: IHeading[] = [];
   let processingImports = false;
   for (let i = 0; i < lines.length; i++) {
-    let line = lines[i].trimLeft().slice(0, -1);
+    let line = lines[i].trimLeft();
     if (line.indexOf('def ') === 0) {
       processingImports = false;
       headings.push({
-        text: line,
+        text: line.slice(0, -1),
         level: 2,
         onClick: onClick(i)
       });
     } else if (line.indexOf('class ') === 0) {
       processingImports = false;
       headings.push({
-        text: line,
+        text: line.slice(0, -1),
         level: 1,
         onClick: onClick(i)
       });
