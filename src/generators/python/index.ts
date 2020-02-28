@@ -20,18 +20,28 @@ function generate(editor: IDocumentWidget<FileEditor>): IHeading[] {
 
   // Iterate over the lines to get the heading level and text for each line:
   let headings: IHeading[] = [];
+  let processingImports = false;
   for (let i = 0; i < lines.length; i++) {
-    let line = lines[i].trimLeft();
-    if (line.indexOf('def') === 0) {
+    let line = lines[i].trimLeft().slice(0, -1);
+    if (line.indexOf('def ') === 0) {
+      processingImports = false;
       headings.push({
         text: line,
         level: 2,
         onClick: onClick(i)
       });
-    } else if (line.indexOf('class') === 0) {
+    } else if (line.indexOf('class ') === 0) {
+      processingImports = false;
       headings.push({
         text: line,
         level: 1,
+        onClick: onClick(i)
+      });
+    } else if (line.indexOf('import ') == 0 && !processingImports) {
+      processingImports = true;
+      headings.push({
+        text: line,
+        level: 2,
         onClick: onClick(i)
       });
     }

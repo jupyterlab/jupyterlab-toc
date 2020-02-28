@@ -8,7 +8,6 @@ import { IHeading } from '../../utils/headings';
  * Renders a Python table of contents item.
  *
  * @private
- * @param options - generator options
  * @param item - numbered heading
  * @returns rendered item
  */
