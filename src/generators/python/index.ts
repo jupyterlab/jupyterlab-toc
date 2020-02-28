@@ -22,7 +22,7 @@ function generate(editor: IDocumentWidget<FileEditor>): IHeading[] {
   let headings: IHeading[] = [];
   let processingImports = false;
   for (let i = 0; i < lines.length; i++) {
-    let line = lines[i].trimLeft();
+    let line = lines[i].trim();
     if (line.indexOf('def ') === 0) {
       processingImports = false;
       headings.push({
