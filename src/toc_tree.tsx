@@ -61,6 +61,41 @@ class TOCTree extends React.Component<IProperties, IState> {
   render() {
     const Toolbar = this.props.toolbar;
 
+    /* keyPress function to handle selection */
+    const keyPressed = (event: React.KeyboardEvent) => {
+      switch (event.key) {
+        case 'ArrowDown':
+          arrowDown();
+          break;
+        case 'ArrowUp':
+          arrowUp();
+          break;
+        default:
+      }
+    };
+
+    const arrowDown = () => {
+      let ul = document.getElementsByClassName('jp-TableOfContents-content')[0];
+      let activeElment = ul.getElementsByClassName('active')[0];
+      let next = activeElment?.nextElementSibling as HTMLElement;
+      if (next) {
+        activeElment.classList.remove('active');
+        next.classList.add('active');
+        next.click();
+      }
+    };
+
+    const arrowUp = () => {
+      let ul = document.getElementsByClassName('jp-TableOfContents-content')[0];
+      let activeElment = ul.getElementsByClassName('active')[0];
+      let prev = activeElment?.previousElementSibling as HTMLElement;
+      if (prev) {
+        activeElment.classList.remove('active');
+        prev.classList.add('active');
+        prev.click();
+      }
+    };
+
     // Map the heading objects onto a list of JSX elements...
     let i = 0;
     let list: JSX.Element[] = this.props.toc.map(el => {
@@ -73,10 +108,12 @@ class TOCTree extends React.Component<IProperties, IState> {
       );
     });
     return (
-      <div className="jp-TableOfContents">
+      <div className="jp-TableOfContents" onKeyDown={keyPressed} tabIndex={0}>
         <header>{this.props.title}</header>
         {Toolbar && <Toolbar />}
-        <ul className="jp-TableOfContents-content">{list}</ul>
+        <ul className="jp-TableOfContents-content" tabIndex={0}>
+          {list}
+        </ul>
       </div>
     );
   }
