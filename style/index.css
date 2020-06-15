@@ -459,3 +459,18 @@
 .toc-level-size-default {
   font-size: 9px;
 }
+
+/**
+ * TOC item context menu.
+ */
+
+.jp-TableOfContents-item-contextmenu {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+
+  background-color: var(--jp-layout-color2);
+}
+
+.jp-TableOfContents-item-contextmenu-item {
+  color: var(--jp-ui-font-color0) !important;
+}
