@@ -21,6 +21,46 @@ function isNotebookHeading(heading: any): heading is INotebookHeading {
 }
 
 /**
+ * Checks whether a heading has runnable code cells.
+ *
+ * @private
+ * @param headings - list of headings
+ * @param heading - heading
+ * @returns boolean indicating whether a heading has runnable code cells
+ */
+function hasCodeCells(headings: IHeading[], heading: IHeading): boolean {
+  let h: INotebookHeading;
+  let i: number;
+
+  if (!isNotebookHeading(heading)) {
+    return false;
+  }
+  // Find the heading in the list of headings...
+  for (i = 0; i < headings.length; i++) {
+    if (heading === headings[i]) {
+      break;
+    }
+  }
+  // Check if the current heading is a "code" heading...
+  h = heading as INotebookHeading;
+  if (h.type === 'code') {
+    return true;
+  }
+  // Check for nested code headings...
+  const level = heading.level;
+  for (i = i + 1; i < headings.length; i++) {
+    h = headings[i] as INotebookHeading;
+    if (h.level <= level) {
+      return false;
+    }
+    if (h.type === 'code') {
+      return true;
+    }
+  }
+  return false;
+}
+
+/**
  * Interface describing component properties.
  *
  * @private
@@ -97,12 +137,11 @@ class TOCItem extends React.Component<IProperties, IState> {
       event.stopPropagation();
       heading.onClick();
     };
-
-    let content = this.props.itemRenderer(heading);
+    const content = this.props.itemRenderer(heading);
     if (!content) {
       return null;
     }
-    const FLG = isNotebookHeading(heading);
+    const FLG = hasCodeCells(this.props.headings, heading);
     return (
       <ListItem
         onClick={onClick}
@@ -132,7 +171,7 @@ class TOCItem extends React.Component<IProperties, IState> {
               className="jp-TableOfContents-item-contextmenu-item"
               onClick={this._onRunFactory(heading as INotebookHeading)}
             >
-              Run Cells
+              Run Cell(s)
             </MenuItem>
           </Menu>
         ) : null}
@@ -200,16 +239,24 @@ class TOCItem extends React.Component<IProperties, IState> {
           break;
         }
       }
-      // Find all nested code headings...
-      const level = heading.level;
       code = [];
-      for (i = i + 1; i < headings.length; i++) {
-        h = headings[i] as INotebookHeading;
-        if (h.level <= level) {
-          break;
-        }
-        if (h.type === 'code') {
-          code.push(h);
+
+      // Check if the current heading is a "code" heading...
+      h = heading as INotebookHeading;
+      if (h.type === 'code') {
+        code.push(h);
+      }
+      // Find all nested code headings...
+      else {
+        const level = heading.level;
+        for (i = i + 1; i < headings.length; i++) {
+          h = headings[i] as INotebookHeading;
+          if (h.level <= level) {
+            break;
+          }
+          if (h.type === 'code') {
+            code.push(h);
+          }
         }
       }
       // Run each of the associated code cells...
