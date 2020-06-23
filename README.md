@@ -19,6 +19,11 @@ Here is an animation showing the extension's use, with a notebook from the [Pyth
 jupyter labextension install @jupyterlab/toc
 ```
 
+### Collapsing Notebooks
+To enable the ability to collapse sections of notebooks from the ToC, open the settings editor (shortcut is ⌘,), navigate to the "Table of Contents" settings, and set `collapsibleNotebooks` to `true`:
+![image](https://user-images.githubusercontent.com/6673460/85434150-3c79a080-b54b-11ea-8f22-7c1cd9ad177e.png)
+
+
 ## Development
 
 For a development install, do the following in the repository directory:
