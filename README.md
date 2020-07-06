@@ -22,6 +22,7 @@ jupyter labextension install @jupyterlab/toc
 ## Settings
 
 Once installed, extension behavior can be modified via the following settings which can be set in JupyterLab's advanced settings editor:
+
 - **collapsibleNotebooks**: enable the ability to collapse sections of notebooks from the ToC
 
 ## Development
