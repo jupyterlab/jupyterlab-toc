@@ -378,7 +378,7 @@
   font-size: inherit;
 }
 
-.toc-cell-item {
+.toc-collapse-button + .toc-cell-item {
   padding-left: 24px;
 }
 
