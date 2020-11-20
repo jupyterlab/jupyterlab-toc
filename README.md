@@ -1,5 +1,7 @@
 # jupyterlab-toc
 
+This extension was added to the core JupyterLab extensions for JupyterLab 3.0. Anyone using JupyterLab < 3.0 should use this extension, but anyone using JupyterLab >= 3.0 will already have this extension installed with the core JupyterLab extensions. Any issues or pull requests should be added to the [JupyterLab repo](https://github.com/jupyterlab/jupyterlab). 
+
 [![Binder][badge-binder]][binder]
 
 A Table of Contents extension for JupyterLab. This auto-generates a table of contents in the left area when you have a notebook or markdown document open. The entries are clickable, and scroll the document to the heading in question.
