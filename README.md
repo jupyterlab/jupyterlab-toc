@@ -1,5 +1,9 @@
 # jupyterlab-toc
 
+## Archived
+
+**This project is archived. Development is now happening in https://github.com/jupyterlab/jupyterlab.**
+
 This extension was added to the core JupyterLab extensions for JupyterLab 3.0. Anyone using JupyterLab < 3.0 should use this extension, but anyone using JupyterLab >= 3.0 will already have this extension installed with the core JupyterLab extensions. Any issues or pull requests should be added to the [JupyterLab repo](https://github.com/jupyterlab/jupyterlab). 
 
 [![Binder][badge-binder]][binder]
