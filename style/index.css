@@ -29,7 +29,8 @@
   padding-bottom: 8px;
 }
 
-.jp-TableOfContents-content li:hover {
+.jp-TableOfContents-content li:hover,
+.jp-TableOfContents-content li.active {
   background: var(--jp-layout-color2);
 }
 

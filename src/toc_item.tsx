@@ -48,6 +48,13 @@ class TOCItem extends React.Component<IProperties, IState> {
     // Create an onClick handler for the TOC item
     // that scrolls the anchor into view.
     const onClick = (event: React.SyntheticEvent<HTMLSpanElement>) => {
+      event.currentTarget.parentNode?.childNodes.forEach(element => {
+        let el = element as HTMLElement;
+        if (el.classList.contains('active')) {
+          el.classList.remove('active');
+        }
+      });
+      event.currentTarget.classList.add('active');
       event.preventDefault();
       event.stopPropagation();
       heading.onClick();
