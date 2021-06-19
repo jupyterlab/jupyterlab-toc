@@ -58,14 +58,18 @@ function render(
 
           // Render the heading item:
           jsx = (
-            <div className="toc-entry-holder">
+            <div className={'toc-entry-holder toc-entry-level-' + item.level}>
               {button}
               {jsx}
             </div>
           );
         } else {
           // Render the heading item without the dropdown button:
-          jsx = <div className="toc-entry-holder">{jsx}</div>;
+          jsx = (
+            <div className={'toc-entry-holder toc-entry-level-' + item.level}>
+              {jsx}
+            </div>
+          );
         }
       }
       return jsx;
@@ -86,14 +90,18 @@ function render(
           let button = twistButton(item.cellRef, collapsed || false, onClick);
           setCollapsedState(tracker, item.cellRef, collapsed);
           jsx = (
-            <div className="toc-entry-holder">
+            <div className={'toc-entry-holder toc-entry-level-' + item.level}>
               {button}
               {jsx}
             </div>
           );
         } else {
           // Render the heading item without the dropdown button:
-          jsx = <div className="toc-entry-holder">{jsx}</div>;
+          jsx = (
+            <div className={'toc-entry-holder toc-entry-level-' + item.level}>
+              {jsx}
+            </div>
+          );
         }
       }
       return jsx;
