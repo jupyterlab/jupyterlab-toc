@@ -2,6 +2,7 @@
 // Distributed under the terms of the Modified BSD License.
 
 import * as React from 'react';
+import List from '@material-ui/core/List';
 import { Widget } from '@lumino/widgets';
 import { IHeading } from './utils/headings';
 import { TableOfContentsRegistry as Registry } from './registry';
@@ -56,6 +57,16 @@ interface IState {}
  */
 class TOCTree extends React.Component<IProperties, IState> {
   /**
+   * Returns a component which renders a table of contents tree.
+   *
+   * @param props - component properties
+   * @returns component
+   */
+  constructor(props: IProperties) {
+    super(props);
+  }
+
+  /**
    * Renders a table of contents tree.
    */
   render() {
@@ -66,6 +77,7 @@ class TOCTree extends React.Component<IProperties, IState> {
     let list: JSX.Element[] = this.props.toc.map(el => {
       return (
         <TOCItem
+          headings={this.props.toc}
           heading={el}
           itemRenderer={this.props.itemRenderer}
           key={`${el.text}-${el.level}-${i++}`}
@@ -76,7 +88,7 @@ class TOCTree extends React.Component<IProperties, IState> {
       <div className="jp-TableOfContents">
         <header>{this.props.title}</header>
         {Toolbar && <Toolbar />}
-        <ul className="jp-TableOfContents-content">{list}</ul>
+        <List className="jp-TableOfContents-content">{list}</List>
       </div>
     );
   }
