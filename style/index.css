@@ -378,8 +378,32 @@
   font-size: inherit;
 }
 
-.toc-cell-item {
+.toc-collapse-button + .toc-cell-item {
   padding-left: 24px;
+}
+
+.toc-entry-level-1 {
+  padding-left: 0;
+}
+
+.toc-entry-level-2 {
+  padding-left: 1em;
+}
+
+.toc-entry-level-3 {
+  padding-left: 2em;
+}
+
+.toc-entry-level-4 {
+  padding-left: 3em;
+}
+
+.toc-entry-level-5 {
+  padding-left: 4em;
+}
+
+.toc-entry-level-6 {
+  padding-left: 5em;
 }
 
 /* styles for tags */
